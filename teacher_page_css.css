@@ -1,0 +1,73 @@
+.teacher-welcome h2 span{
+    color: var(--primary-color);
+    font-weight: 660;
+    font-size: 55px;
+}
+.teacher-welcome h2{
+    padding-top: 0;
+}
+
+
+
+.after_des_teacher{
+    margin-top: 20vh;
+}
+
+.after_des_teacher h5{
+    color: #fff;
+    font-size: 40px;
+}
+
+.after_des_teacher button{
+    margin-top: 30px;
+    width: 200px;
+}
+
+
+
+
+.teacher_card{
+    margin-top: 5vh;
+}
+
+.teacher-card-wrapper{
+    background-color: #131e35;
+    border: 1px solid rgb(0, 195, 255);
+    padding: 14px 10px;
+    border-radius: 7px;
+    padding-top: 25px;
+}
+
+.teacher-card-wrapper h6{
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 22.5px;
+    text-transform: none;
+
+}
+
+.teacher-card-wrapper h6 span{
+    letter-spacing: 0.1px;
+    color: rgba(231, 231, 231, 0.9);
+    font-size: 18px;
+}
+
+.teacher-card-wrapper h6 span #teach_gmail{
+    color: var(--primary-color);
+}
+
+/*_________________________________________
+____________________________________________
+________________________________________________
+__________________________________________
+________________________________________*/
+
+
+@media screen and (min-width:300px) and (max-width:700px){
+    .teacher-welcome{
+        margin-top: 10%;
+    }
+    .teacher-welcome h2 span{
+        font-size: 40px;
+    }
+}

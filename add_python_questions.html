@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>PYTHON ADD QUESTIONS</title>
+
+    <!--FONT-AWESOME-->
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+            <!--sweet alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="quizzes_inner_css.css">
+    <link rel="stylesheet" href="see_java_ans_css.css">
+    <link rel="stylesheet" href="add_Questions_css.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-12 col-lg-12">
+                <div class="enter_form">
+                    <center>
+                        <form id="enter_que_form">
+
+                            <div class="form_inner">
+                                <div class="add_questNum_class text-left">
+                                    <h6>Enter Question Number : </h6>
+                                    <input type="number" id="question_num">
+                                </div>
+
+                                <div class="add_quest_class text-left">
+                                    <h6>Enter Question : </h6>
+                                    <input type="text" id="the_question">
+                                </div>
+
+                                <div class="add_options_class text-left">
+                                    <h6>Enter Options : </h6>
+
+                                    <div class="add_options_1 text-left">
+                                        <h6>Option-1 : </h6>
+                                        <input type="text" id="option_1">
+                                    </div>
+
+                                    <div class="add_options_2 text-left">
+                                        <h6>Option-2 : </h6>
+                                        <input type="text" id="option_2">
+                                    </div>
+
+                                    <div class="add_options_3 text-left">
+                                        <h6>Option-3 : </h6>
+                                        <input type="text" id="option_3">
+                                    </div>
+
+                                    <div class="add_options_4 text-left">
+                                        <h6>Option-4 : </h6>
+                                        <input type="text" id="option_4">
+                                    </div>
+
+                                </div>
+
+                                <div class="add_answer_class text-left">
+                                    <h6>Enter Answer : </h6>
+                                    <input type="text" id="the_answer">
+                                </div>
+
+                                <div class="add_que_btn">
+                                    <input type="submit" value="ADD QUESTION" id="submit_button">
+                                </div>
+                            </div>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+<br><br><br>
+
+<div class="row">
+    <div class="col-sm-12 col-lg-12 text-center">
+        <div class="show_title text-center">
+            <h4>- AVAILABLE <span>QUESTIONS -</span></h4>
+        </div>
+        
+        <div class="answers_wrapper">
+            <div class="answers_container">
+               <div class="row" id="answers_id">
+    
+               </div>
+            </div>
+         </div>
+    </div>
+</div>
+<br><br><br>
+
+
+    </div>
+
+
+
+</body>
+<script type="module" src="enter_python_data.js"></script>
+<script type="module" src="del_see_Python_ans.js"></script>
+</html>
+
+
+
+
+
+
+<!--
+
+
+    <div class="container">
+        <!--<div class="row">
+            
+     <div class="answers_wrapper">
+        <div class="answers_container">
+           <div class="row" id="answers_id">
+
+           </div>
+        </div>
+     </div>
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="enter_form">
+                <form action="" id="add_data_form">
+                    <div class="enter_form_inner">
+                        <div class="enter_num input-field">
+                            Enter Question number:<br> <input type="number" id="question_num">
+                        </div>
+                        <br>
+                        <div class="enter_question input-field">
+                            Enter Question : <br>
+                            <input type="text" id="the_question">
+                        </div>
+
+                        <br><br>
+                        <div class="enter_options input-field">
+                            OPTIONS : <br>
+                            <div class="input-filed">
+                                <input type="text" id="option_1"> <br>
+                            </div>
+                            <div class="input-filed">
+                                <input type="text" id="option_2"> <br>
+                            </div>
+                            <div class="input-filed">
+                                <input type="text" id="option_3"> <br>
+                            </div>
+                            <div class="input-filed">
+                                <input type="text" id="option_4"> <br>
+                            </div>
+                            <br><br>
+                        </div>
+
+                        <div class="enter_answer input-field">
+                            Answer : <br>
+                            <input type="text" id="the_answer">
+                        </div>
+                    </div>
+
+                    <!--<button id="submit_button" id="submit_button">Submit</button>
+                    <input type="submit" value="submit" id="submit_button">
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script type="module" src="enter_data.js"></script>
+    <script type="module" src="see_ans.js"></script>
+    
+-->

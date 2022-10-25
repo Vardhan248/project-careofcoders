@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>C course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C LANGUAGE</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Operators</h3>
+    <p> 
+        Operators are the foundation of any programming language. We can define operators as symbols that help us to perform specific mathematical and logical computations on operands. In other words, we can say that an operator operates the operands. <br><br>
+        C has many built-in operators and can be classified into 6 types:<br>
+        Arithmetic Operators<br>
+        Relational Operators<br>
+        Logical Operators<br>
+        Bitwise Operators<br>
+        Assignment Operators<br>
+        Other Operators<br><br>
+        1. Arithmetic Operators:<br> 
+        These operators are used to perform arithmetic/mathematical operations on operands. Examples: (+, -, *, /, %,++,–). Arithmetic operators are of two types: <br>
+        a) Unary Operators: <br>
+        Operators that operate or work with a single operand are unary operators. For example: Increment(++) and Decrement(–) Operators<br>
+        b) Binary Operators:<br>
+        Operators that operate or work with two operands are binary operators. For example: Addition(+), Subtraction(-), multiplication(*), Division(/) operators<br><br>
+        2. Relational Operators:<br>
+        These are used for the comparison of the values of two operands. For example, checking if one operand is equal to the other operand or not, whether an operand is greater than the other operand or not, etc. Some of the relational operators are (==, >= , <= ,!=,>,<)<br><br>
+        3. Logical Operators:<br>
+        Logical Operators are used to combine two or more conditions/constraints or to complement the evaluation of the original condition in consideration. The result of the operation of a logical operator is a Boolean value either true or false. Some of the logical operators are (&&,||,!).<br><br>
+        4. Bitwise Operators: <br>
+        The Bitwise operators are used to perform bit-level operations on the operands. The operators are first converted to bit-level and then the calculation is performed on the operands. Mathematical operations such as addition, subtraction, multiplication, etc. can be performed at the bit level for faster processing. Some of the bitwise operators are (&,|,^,~,<<,>>).<br><br>
+        5. Assignment Operators: <br>
+        Assignment operators are used to assign value to a variable. The left side operand of the assignment operator is a variable and the right side operand of the assignment operator is a value. The value on the right side must be of the same data type as the variable on the left side otherwise the compiler will raise an error. Some of the assignment operators are (=,+=, -=, *=, /=, %=,<<==,>>==,&=,^=,|=).<br><br>
+        6. Other Operators: <br>
+        Apart from the above operators, there are some other operators available in C used to perform some specific tasks. Some of them are discussed here: <br>
+        a. sizeof operator<br>
+        sizeof is much used in the C programming language.<br>
+        It is a compile-time unary operator which can be used to compute the size of its operand.<br>
+        The result of sizeof is of the unsigned integral type which is usually denoted by size_t.<br>
+        Basically, the sizeof the operator is used to compute the size of the variable. (See this article for reference)<br>
+        b. Comma Operator<br>
+        The comma operator (represented by the token) is a binary operator that evaluates its first operand and discards the result, it then evaluates the second operand and returns this value (and type).<br>
+        The comma operator has the lowest precedence of any C operator.<br>
+        Comma acts as both operator and separator.<br>
+        c. Conditional Operator<br>
+        The conditional operator is of the form Expression1? Expression2: Expression3<br>
+        Here, Expression1 is the condition to be evaluated. If the condition(Expression1) is True then we will execute and return the result of Expression2 otherwise if the condition(Expression1) is false then we will execute and return the result of Expression3.<br>
+        We may replace the use of if..else statements with conditional operators. (See this article for reference)<br>
+        d. dot (.) and arrow (->) Operators<br>
+        Member operators are used to reference individual members of classes, structures, and unions.<br>
+        The dot operator is applied to the actual object.<br>
+        The arrow operator is used with a pointer to an object.<br>
+        e.  Cast Operator<br>
+        Casting operators convert one data type to another. For example, int(2.2000) would return 2.<br>
+        A cast is a special operator that forces one data type to be converted into another. <br>
+        The most general cast supported by most of the C compilers is as follows −   [ (type) expression ].<br>
+        f.  &,* Operator<br>
+        Pointer operator & returns the address of a variable. For example &a; will give the actual address of the variable.<br>
+        Pointer operator * is a pointer to a variable. 
+        
+        <br><br><br>
+
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/50Pb27JoUrw" title="Introduction to Operators in C" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Preprocessor</h3>
+    <p> 
+        What is Preprocessor in C? <br>
+        A Preprocessor in C is a program that processes or analyzes the source code file before it is given to the compiler. But actually what is Preprocessor in C? What is its role in C?<br>
+        A Preprocessor in C plays an important role in the program execution process. In the C program development cycle, the source code (.C program) is given to the preprocessor before it is compiled.<br><br>
+        Advantages of Preprocessor in C<br>
+        •	It takes action according to special instructions called Preprocessor directives which begin with #.<br>
+        •	Joins any lines that end with a backslash character into a single line.<br>
+        •	Divides the program into a stream of tokens.<br>
+        •	Remove comments and replaces them by a single space.<br>
+        •	Processes preprocessor directives and expands macros.<br>
+        •	Replaces escape sequences by their equivalent internal representation.<br>
+        •	Concatenates adjacent constant character strings.<br>
+        •	Replaces trigraph sequences (Non-ASCII character sets) by their equivalent.<br><br>
+        Format of Preprocessor Directives<br>
+        The preprocessor in C checks the source code for special instructions called preprocessor directives. Pre-processor directives are not ‘C’ language statements but they are special instructions for the pre-processor. The format of the directive is:<br>
+        A preprocessor directive begins with # and does not end with semicolon(;)<br><br>
+        Preprocessor directives in C are of three types:<br>
+        1.	File inclusion directive.<br>
+        2.	Macro substitution directive.<br>
+        3.	Conditional compilation directive.<br><br>
+        1. File Inclusion Directive<br>
+        The file inclusion directive is #include. This directive instructs the compiler to include contents of the specified file, i.e, it inserts the entire contents of the file at that position.<br>
+        Including a header file is equal to copying the contents of the header file.<br>
+        Syntax:<br>
+        #include<filename> OR #include “filename”<br>
+        In the first format, the filename is searched in standard directories only. In the second, the file is first searched in the current directory. If it is not found there, the search continues in the standard directories.<br>
+        Any external file-containing user-defined functions, macro definitions etc, can be included. An included file can include other files.<br><br>
+        2. Macro Substitution Directive<br>
+        Macro substitution is a process where an identifier in a program is replaced by a predefined string or a value. The macro substitution directive is #define.<br>
+        Different types of macros in C substitution:<br>
+        1.	Simple macro.<br>
+        2.	Argumented macro.<br>
+        3.	Nested macro.<br>
+        Simple Macro Substitution:<br>
+        It defined a symbol which represents a value. Wherever the macro name or symbol occurs in a program the pre-processor substitutes the code of the macro at that position.<br>
+        It is used to define symbolic constants which occurs frequently in a program.<br>
+        Syntax:<br>
+        #define macro-id value<br>
+        Argumented Macros:<br>
+        A macro can be defined with arguments. Such a macro is called a function macro because it looks like a function. It represents a small executable code. Each time the macro name is encountered, its arguments are replaced by the actual arguments in the program.<br>
+        Wherever the macro occurs in the program, its argument is replaced by the variable or value used in the program.<br>
+        It is advisable to enclose the arguments in ( ). If the arguments are not enclosed in ( ), it may yield wrong results.<br>
+        Nested Macros:<br>
+        A macro can be used within another macro. this is called nesting of macros.<br>
+        A Macro can also be passed to itself as an argument.<br><br>
+        3. Conditional Compilation Directive<br>
+        this type of preprocessors in C causes conditionally suppress the compilation portion of the source code.<br>
+        There are six types of Conditional Compilation Directive:<br>
+        1.	#if directives.<br>
+        2.	#elif directives.<br>
+        3.	#ifdef directives.<br>
+        4.	#ifndef directives.<br>
+        5.	#else directives.<br>
+        6.	#endif directives.
+        
+            <br><br><br>
+
+            <iframe width="942" height="530" src="https://www.youtube.com/embed/5k7ZgnHxHa4" title="C - Preprocessors" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="c-course-inner3.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="c-course-inner5.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

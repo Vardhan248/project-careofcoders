@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Python course Inner 8</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>PYTHON</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+   
+    <h3>Python GUI</h3>
+    <p>
+        Python Libraries for GUI Programming <br>
+We can use any of the following toolkits in Python for GUI programming.<br><br>
+1. Tkinter:<br>
+Tkinter is a standard package used for GUI programming in Python. This is built on top of the Tk interface.<br><br>
+2. PyQt:<br>
+PyQt is a Python toolkit binding of the Qt toolkit. Qt is a C++ framework that is used by Python to implement a cross-platform PyQt toolkit as a plug-in.<br><br>
+3. wxPython:<br>
+wxPython is also a cross-platform GUI toolkit. It is a wrapper for the API wxWidgets.<br><br>
+Python Tkinter Module <br>
+As said before we will concentrate on the Tkinter module.
+Tkinter is a standard Python library used for GUI programming. It provides an object-oriented interface to build the Tk GUI toolkit. It is a faster and easier way to build a GUI in Python.<br><br>
+The creation of a blank GUI interface is the first step of the creation of any GUI. This process of creating a simple GUI in Tkinter requires the following steps:<br>
+1. Importing the Tkinter library:<br>
+We can import the Tkinter library by writing the below code.<br>
+import tkinter<br><br>
+2. Creating the main window for the application:<br>
+To create the main GUI window using the function Tk() function. The syntax of the Tk() function is:<br>
+Tk(screenName=None,  baseName=None,  className=’Tk’,  useTk=1)<br>
+All the arguments are optional. We can change the name of the window by setting the className argument to your choice. This function returns the main window object which can be used in the next steps.<br><br>
+3. Adding the required widgets to the window:<br>
+Tinter provides 19 widgets. We will discuss each of these in the next section.<br><br>
+4. Calling the function mainloop():<br>
+This is the function that gets triggered when an event occurs. This is an infinite loop that runs till we close the application window.Python Libraries for GUI Programming<br> <br>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/RVN2uop3TyI" title="Python - GUI Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+</p>
+
+<hr>
+<br>
+<h3>Modules in python</h3>
+<p>
+    Modules refer to a file containing Python statements and definitions. <br>
+    A file containing Python code, for example: example.py, is called a module, and its module name would be example.<br>
+    We use modules to break down large programs into small manageable and organized files. Furthermore, modules provide reusability of code.<br>
+    We can define our most used functions in a module and import it, instead of copying their definitions into different programs.<br><br>
+    How to import modules in Python?<br>
+    We can import the definitions inside a module to another module or the interactive interpreter in Python.<br>
+    We use the import keyword to do this. To import our previously defined module example, we type the following in the Python prompt.<br>
+    Python has tons of standard modules. You can check out the full list of Python standard modules and their use cases. These files are in the Lib directory inside the location where you installed Python.<br>
+    Standard modules can be imported the same way as we import our user-defined modules.<br>
+    There are various ways to import modules. <br>
+    Python import statement<br>
+    We can import a module using the import statement and access the definitions inside it using the dot operator as described above.<br><br>
+    Import with renaming<br>
+    We can import a module by renaming it .<br>
+    Python from...import statement<br>
+    We can import specific names from a module without importing the module as a whole.<br><br>
+    Import all names<br>
+    We can import all names(definitions) from a module .<br>
+    Importing everything with the asterisk (*) symbol is not a good programming practice. This can lead to duplicate definitions for an identifier. It also hampers the readability of our code.<br><br>
+    Python Module Search Path<br>
+    While importing a module, Python looks at several places. Interpreter first looks for a built-in module. Then(if built-in module not found), Python looks into a list of directories defined in sys.path. The search is in this order.<br>
+    •	The current directory.<br>
+    •	PYTHONPATH (an environment variable with a list of directories).<br>
+    •	The installation-dependent default directory.<br>
+    Reloading a module<br>
+    The Python interpreter imports a module only once during a session. This makes things more efficient.<br> <br>
+    
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/NJ_JTzpjKE8" title="What are Modules in Python and How to Define Modules in Python with Examples" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<hr>
+</div>
+
+
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="python-course-inner7.html" class="previous">&laquo; previous</a>
+        </div>
+        <!--
+                    <div class="next last-next"> 
+            <a href="" class="next ">Next &raquo;</a>
+        </div>
+        -->
+        <div class="next"> 
+            <a href="python-course-inner9.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+    
+</body>
+</html>
+
+<!--<div class="features">
+        <h3>Features of this course :</h3>
+        <p><i class="far fa-video"></i> Video links for each topic</p>
+        <p><i class="far fa-cloud-download"></i> downloadable articles</p>
+        <p><i class="far fa-mobile-alt"></i> Can be viewed on  phone</p>
+        <p><i class="far fa-paperclip"></i> Quizz questions</p>
+        <p><i class="fas fa-certificate"></i> Will be certified </p>
+    </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!----  
+    <hr>
+
+<div class="congo">
+    <center>
+    <div class="congo-text">
+        <p>Congratulations! You have successfully completed your <span>Python course</span>. Please download the certificate  </p>
+    </div>
+
+    <canvas id="canvas" height="707px" width="1000px"></canvas>
+
+    <div class="congo-btn">
+        <a href="" id="congo-btn" class="main-btn">Download</a>
+    </div>
+</center>
+</div>
+
+<hr>
+
+
+
+
+
+    <script type="module" src="python-certi.js"></script>
+    -->

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>C course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C LANGUAGE</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Storage classes in c</h3>
+    <p> 
+        We use the storage class in the C language for determining the visibility, lifetime, initial value, and memory location of any given variable. The storage classes define the visibility (scope) and the lifetime of any function/ variable within a C program. These classes precede the type that they are going to modify. <br><br>
+        Types of Storage Classes in C<br>
+        There are four different types of storage classes that we use in the C language:<br>
+        •	Automatic Storage Class<br>
+        •	External Storage Class<br>
+        •	Static Storage Class<br>
+        •	Register Storage Class<br><br>
+        Use of Storage Class in C<br>
+        A variable given in a C program will have two of the properties: storage class and type. Here, type refers to any given variable’s data type, while the storage class determines that very variable’s lifetime, visibility, and also its scope.<br><br>
+        Automatic Storage Class<br>
+        It is also known as the auto storage class, and it acts as the default storage class for all the variables that are local in nature.<br><br>
+        Features of automatic variables:<br>
+        •	The allocation of memory for these variables occurs automatically during the runtime.<br>
+        •	The scope of an automatic variable is limited to that block in which we are defining them.<br>
+        •	The visibility of these variables is also limited to that block in which we are defining them.<br>
+        •	The initialization of these variables is, by default, a garbage value.<br>
+        •	The memory that is assigned to an automatic variable gets free when it exits from a block.<br>
+        •	We use the keyword auto to define the automatic variables.<br>
+        •	Any local variable that exists in the C language is, by default, automatic in nature.<br><br>
+        External Storage Class<br>
+        It is also known as the extern storage class, and we use it for giving a reference of any global variable which is visible to all the files present in a program. When using the extern storage class, we cannot initialize the variable. However, note that it points to the name of the variable at any storage location that we have already defined (previously).<br>
+        Whenever we have multiple numbers of files while we are trying to define any global variable or a function (that will be used in various other files too), then we will use the extern in another file for providing the reference of the defined function or variable. In simpler words, we use the entern for declaring a function or a global variable in another file.<br>
+        The most common use of the extern modifier is when we have two or more than two files that share a similar global variable or function.<br><br>
+        The features of external variables:<br>
+        •	We use the external storage class for conveying to the compiler that the variable that has been defined as the extern has been declared using an external linkage that exists elsewhere in any program.<br>
+        •	One can only perform the initialization of an external variable globally. In other words, one cannot perform the initialization of an external variable within any given method or block.<br>
+        •	The variables that are declared as extern have no allocation of memory. It only has a declaration, and it intends to specify that the given variable has been declared elsewhere in the available program.<br>
+        •	An external integral type’s default initial value is going to be 0, or else it is null.<br>
+        •	We can initialize an external variable multiple times, but we can only initialize it a single time.<br>
+        •	When we declare a variable as external, the compiler will start searching for that variable for initialization somewhere in the available program. It might be static or extern. In case it isn’t, the compiler will ultimately generate an error (a compile-time error).<br><br>
+        Static Storage Class<br>
+        This type of storage class gives an instruction to a compiler to keep the given local variable around during the program’s lifetime- instead of creating it and then destroying it every time it comes into a scope and goes out of it. Thus, when we make a local variable static, it allows the variable to maintain the values that are available between various function calls.<br>
+        We may also apply a static modifier to a global variable. When we do so, it will cause the scope of the variable to be restricted to that file in which its declaration happened.<br>
+        In a C programming language, when we use the static on a global variable, it will cause all the objects present in a class to share a single copy of that given member.<br><br>
+        Features of static variables:<br>
+        •	Those variables that we define as static specifiers are capable of holding their assigned value that exists between various function calls.<br>
+        •	The static local variables are only visible to the block or the function in which we have defined them.<br>
+        •	We can declare the very same static variable multiple times, but we can only assign it a single time.<br>
+        •	The initial value of a static integral variable, by default, is 0. Else, it is null.<br>
+        •	We use the static keyword in the case of a static variable.<br>
+        •	The visibility of any static global variable stays limited to that file in which we have declared it.<br><br>
+        Register Storage Class<br>
+        We use the register storage class for defining the local variables that must be stored in any register, and not in a RAM. It means that the maximum size of this variable is equal to that of the register size (it is usually one word). Also, we cannot apply the ‘&’ unary operator to it because it has no memory location.<br><br>
+        Features of register variables:<br>
+        •	Those variables that we define as the register have their memory allocation into the CPU registers. It depends totally upon the size of the memory that remains in the CPU.<br>
+        •	Its access time is comparatively much faster than that of the automatic variables.<br>
+        •	One cannot dereference a register variable. In other words, one cannot make use of the ‘&’ operator in the case of a register variable.<br>
+        •	The default initial value of any given register local value will always be 0.<br>
+        •	We use the register keyword for the variable that must be stored in a CPU register. However, whether a variable must be stored in a register or not is always going to be the choice of the compiler.<br>
+        •	One can easily store the pointers in a register. It means that any register is capable of storing the given variable’s address.<br>
+        •	We cannot store a variable into a register since we can’t really utilize more than one storage specifier for the very same variable.
+        <br><br>
+
+<<iframe width="942" height="530" src="https://www.youtube.com/embed/-cycQu5Pz7o" title="C_140 Storage Classes in C | C Language tutorials" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Input and output</h3>
+    <p> 
+        Input means to provide the program with some data to be used in it and Output means to display data on the screen or write the data to a printer or a file. <br>
+        The C programming language provides standard library functions to read any given input and display output on the console.<br><br>
+        1. The printf() function<br>
+        The printf() function is the most used function in the C language. This function is defined in the stdio.h header file and is used to show output on the console (standard output).<br>
+        Following is how the printf() function is defined in the C stdio.h library.<br>
+        int printf(const char *format, ...);<br>
+        It writes the C string pointed by the format pointer to the standard output (stdout). On success, the total number of characters written is returned.<br>
+        This function is used to print a simple text sentence or value of any variable which can be of int, char, float, or any other datatype.<br><br>
+                                  Print an Integer value<br>
+        We can use the printf() function to print integer value coming from a variable using the %d format specifier.<br><br>
+        Print a Character value<br>
+        The %c format specifier is used to print character variable value using the printf() function.<br><br>
+                         Print a Float and a Double value<br>
+        For float value we use the %f format specifier and for double value we use the %lf format specifier.<br><br>
+                                Print multiple outputs<br>
+        We can use a single printf() function to display values of multiple variables. We can also perform some simple calculations inside printf().<br><br>
+        2.The scanf() function<br>
+        When we want to take input from the user, we use the scanf() function and store the input value into a variable.<br>
+        It reads data from stdin and stores it according to the parameter format into the locations pointed by the additional arguments. On success, the function returns the number of items of the argument list successfully filled.<br>
+        The scanf() function can be used to take any datatype input from user, all we have to take care is that the variable in which we store the value should have the same datatype.<br>
+        Using the format specifier, we tell the compiler what type of data is in a variable and & is the address operator which tells the compiler the address of the variable so that the compiler can assign the variable with the value entered by the user.<br><br>
+                              Input Integer value<br>
+        If we have to take an integer value input from the user, we have to define an integer variable and then use the scanf() function.<br><br>
+                              Input Float value<br>
+        Just like integer value, we can take input for any different datatype.<br><br>
+        Return Value of printf() & scanf()<br>
+        The printf() function returns the number of characters printed by it, and scanf() function returns the number of characters read by it.<br><br>
+        3. getchar() & putchar() functions<br>
+        The getchar() function reads a character from the terminal and returns it as an integer. This function reads only a single character at a time.<br>
+        Here is the syntax for the getchar() function:<br><br>
+        int getchar(void);<br>
+        You can use this method in a loop in case you want to read more than one character.<br>
+        The putchar() function displays the character passed to it on the screen and returns the same character. This function too displays only a single character at a time.<br><br>
+        Here is the syntax for the putchar() function:<br>
+        int putchar(int character);<br>
+        In case you want to display more than one character, use putchar() method in a loop.<br><br>
+        4. gets() & puts() functions<br>
+        The gets() function reads a line from stdin(standard input) into the buffer pointed to by str pointer, until either a terminating newline or EOF (end of file) occurs.<br>
+        Here is the syntax for the gets() function:<br>
+        char* gets(char* str);<br>
+        The puts() function writes the string str with a newline character ('\n') at the end to stdout. On success, a non-negative value is returned.<br>
+        Here is the syntax for the gets() function:<br>
+        int puts(const char* str);
+            <br><br><br>
+
+            <iframe width="942" height="530" src="https://www.youtube.com/embed/kidWWcv1g0A" title="input output functions in c program | printf, scanf, getchar and putchar |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="c-course-inner2.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="c-course-inner4.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

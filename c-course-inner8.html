@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>C course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C LANGUAGE</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Memory management</h3>
+    <p> 
+        Memory Management <br>
+Memory management, or memory allocation, is the process by which computer programs are assigned to physical or virtual memory space. Computer memory is a finite resource that must be efficiently managed.<br>
+The memory allocation can be done either before or at the time of program implementation. There are two techniques for memory allocation: static memory allocation and dynamic memory allocation.<br><br>
+Static Memory Allocation<br>
+In this type of allocation, the compiler allocates a fixed amount of memory during compile time and the operating system internally uses a data structure known as stack to manage the memory.<br>
+Exact memory requirements must be known in advance as once memory is allocated it can not be changed.<br><br>
+Dynamic Memory Allocation<br>
+In this type of allocation, system memory is managed at runtime. Dynamic memory management in C programming language is performed using the malloc(), calloc(), realloc(), and free() functions. These four functions are defined in the <stdlib.h> C standard library header file. It uses the heap space of the system memory. More can be learned about these functions below:<br>
+Memory Management<br>
+calloc() <br>
+Dynamically allocates an array of memory blocks of a specified type.<br>
+free()<br>
+Dynamically de-allocates memory at runtime.<br>
+malloc()<br>
+Allocates a block of memory in the heap, but does not initialize.<br>
+realloc()<br>
+Reallocates a block of memory that was previously allocated.
+
+        
+
+
+        
+        <br><br><br>
+
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/734IQSAkww4" title="C - Memory Management" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>File handling</h3>
+    <p> 
+        
+        File Handling in C <br>
+In programming, we may require some specific input data to be generated several numbers of times. Sometimes, it is not enough to only display the data on the console. The data to be displayed may be very large, and only a limited amount of data can be displayed on the console, and since the memory is volatile, it is impossible to recover the programmatically generated data again and again. However, if we need to do so, we may store it onto the local file system which is volatile and can be accessed every time. Here, comes the need of file handling in C.<br><br>
+File handling in C enables us to create, update, read, and delete the files stored on the local file system through our C program. The following operations can be performed on a file.<br>
+•	Creation of the new file<br>
+•	Opening an existing file<br>
+•	Reading from the file<br>
+•	Writing to the file<br>
+•	Deleting the file<br><br>
+Functions for file handling<br>
+There are many functions in the C library to open, read, write, search and close the file. A list of file functions are given below:<br>
+1.fopen()-opens new or existing file<br>
+2.fprintf()-write data into the file<br>
+3.fscanf()-reads data from the file<br>
+4.fputc()-writes a character into the file<br>
+5.fgetc()-reads a character from file<br>
+6.fclose()-closes the file<br>
+7.fseek()-sets the file pointer to given position<br>
+8.fputw()-writes an integer to file<br>
+9.fgetw()-reads an integer from file<br>
+10.tell()-returns current position<br>
+11.rewind()-sets the file pointer to the beginning of the file<br><br>
+Opening File: fopen()<br>
+We must open a file before it can be read, write, or update. The fopen() function is used to open a file. The syntax of the fopen() is given below.<br>
+FILE *fopen( const char * filename, const char * mode );  <br>
+The fopen() function accepts two parameters:<br>
+The file name (string). If the file is stored at some specific location, then we must mention the path at which the file is stored. For example, a file name can be like "c://some_folder/some_file.ext".<br>
+The mode in which the file is to be opened. It is a string.<br><br>
+We can use one of the following modes in the fopen() function.<br>
+r-opens a text file in read mode<br>
+w-opens a text file in write mode<br>
+a-opens a text file in append mode<br>
+r+-opens a text file in read and write mode<br>
+w+-opens a text file in read and write mode<br>
+a+-opens a text file in read and write mode<br>
+rb-opens a binary file in read mode<br>
+wb-opens a binary file in write mode<br>
+ab-opens a binary file in append mode<br>
+rb+-opens a binary file in read and write mode<br>
+wb+-opens a binary file in read and write mode<br>
+ab+-opens a binary file in read and write mode<br>
+The fopen function works in the following way.<br>
+Firstly, It searches the file to be opened.<br>
+Then, it loads the file from the disk and place it into the buffer. The buffer is used to provide efficiency for the read operations.<br>
+It sets up a character pointer which points to the first character of the file.<br><br>
+Closing File: fclose()<br>
+The fclose() function is used to close a file. The file must be closed after performing all the operations on it. <br>
+int fclose( FILE *fp ); 
+
+
+            <br><br><br>
+
+            <iframe width="942" height="530" src="https://www.youtube.com/embed/MQIF-WMUOL8" title="#29: C File Handling | C Programming for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    
+</div>
+
+<div class="congo">
+    <center>
+    <div class="congo-text">
+        <p>Congratulations! You have successfully completed your <span>C-language course</span>. Please download the certificate  </p>
+    </div>
+
+    <canvas hidden id="canvas" height="707px" width="1000px"></canvas>
+
+    <div class="congo-btn">
+        <a href="" id="congo-btn" class="main-btn">Download</a>
+    </div>
+</center>
+</div>
+
+<hr>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="c-course-inner7.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next last-next">
+            <a href="" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="c_certi.js"></script>
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

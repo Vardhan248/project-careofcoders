@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Teacher Home</title>
+
+   <!--FAVICON-->
+   <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+   <!--BOOTSTRAP CSS-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+   
+   <!--FONT-AWESOME-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+   <!--BOOTSTRAP JS-->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+<style>
+    .course-type {
+    padding-top: 1.25rem;
+    }
+
+    .next_course{
+        margin-top: 9vh;
+    }
+
+    .start_here{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5vh;
+    }
+    .start_here h1 span{
+        color: #fff;
+        
+    }
+</style>
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+
+ 
+  <section id="About">
+   <!--<center><h1>FEATURES OVER HERE</h1></center>-->
+    <div class="about-section wrapper">
+        <div class="container">
+            <div class="start_here">
+            <h1> <span>↓</span> START ADDING QUESTIONS HERE <span>↓</span></h1>
+        </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 mb-lg-0 mb-5">
+                    <img src="images/teacher_python.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 ps-lg-5">
+                    <h2>PYTHON QUIZ</h2>
+                    <p>You can add python quiz questions of your choice and even you can delete questions from the quiz. Make sure that questions shouldn't be too tough or easy </p>
+                    <button class="main-btn mt-4" onClick="window.location.href='add_python_questions.html';">GO AHEAD</button>
+                </div>
+            </div>
+            <div class="row align-items-center course-type">
+                <div class="col-lg-6 col-md-12 order-2 order-lg-1 pe-lg-5"> 
+                    <h2>JAVA QUIZ</h2>
+                    <p>You can add java quiz questions of your choice and even you can delete questions from the quiz. Make sure that questions shouldn't be too tough or easy </p>
+                    <button class="main-btn mt-4" onclick="window.location.href='add_Java_questions.html';">GO AHEAD</button>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-lg-0 mb-5 order-1 order-lg-2">
+                    <img src="./images/t.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row align-items-center next_course">
+                <div class="col-lg-6 col-md-12 mb-lg-0 mb-5">
+                    <img src="images/teacher_c.png" style="height:400px; width:auto;" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 ps-lg-5">
+                    <h2>C QUIZ</h2>
+                    <p>You can add C-language quiz questions of your choice and even you can delete questions from the quiz. Make sure that questions shouldn't be too tough or easy </p>
+                    <button class="main-btn mt-4" onclick="window.location.href='add_c_questions.html';">GO AHEAD</button>
+                </div>
+            </div>
+            <div class="row align-items-center course-type">
+                <div class="col-lg-6 col-md-12 order-2 order-lg-1 pe-lg-5"> 
+                    <h2>C# QUIZ</h2>
+                    <p>You can add C# quiz questions of your choice and even you can delete questions from the quiz. Make sure that questions shouldn't be too tough or easy </p>
+                    <button class="main-btn mt-4" onClick="window.location.href='add_csharp_questions.html';">GO AHEAD</button>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-lg-0 mb-5 order-1 order-lg-2 ms-">
+                    <img src="./images/teacher_c-sharp.png" style="height:400px; width:auto; margin-left: 70px;" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row align-items-center next_course">
+                <div class="col-lg-6 col-md-12 mb-lg-0 mb-5">
+                    <img src="images/teacher_cpp.webp" style="height:400px; width:auto;" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 ps-lg-5">
+                    <h2>C++ QUIZ</h2>
+                    <p>You can add C++ quiz questions of your choice and even you can delete questions from the quiz. Make sure that questions shouldn't be too tough or easy </p>
+                    <button class="main-btn mt-4" onclick="window.location.href='add_cp_questions.html';">GO AHEAD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+
+<script src="./main.js"></script>
+</body>
+</html>

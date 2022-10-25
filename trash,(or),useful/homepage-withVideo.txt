@@ -1,0 +1,588 @@
+<!--HTML-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>PROJECT</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="D:\Proj\css\style.css">
+    <link rel="stylesheet" href="D:\Proj\css\responsive-style.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+   <!-- <video autoplay loop muted plays-inline class="">
+        <source src="./images/High_tech_digital_world_background_4k(2160p).webm" type="video/mp4">
+    </video>-->
+    <header class="header_wrapper">
+      <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+            </a>
+ 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <i class="fas fa-stream navbar-toggler-icon"></i>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav menu-navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="Profile-course.html">Profile</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="Compilers.html" >Compilers</a>
+                      </li>
+                      <li class="nav-item mt-3 mt-lg-0">
+                          <a class="main-btn" href="courses.html">Courses</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+
+<!--Banner Section-->
+<section id="home" class="banner_wrapper">
+    <div class="video-container">
+        <video src="./images/Plexus_Abstract_Background(1080p).mp4" muted loop autoplay></video>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center text-md-start content">
+          <h6>PROJECT</h6>
+          <h1>PROJECT TEAM 10<br><span>EDUCATIONAL WEBSITE</span><br>LEARN  HERE!</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="About">
+   <!--<center><h1>Features Over Here</h1></center> -->
+    <div class="about-section wrapper">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 mb-lg-0 mb-5">
+                    <img src="images/Java_Lang.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 ps-lg-5">
+                    <h2>Quality Hand-picked Content</h2>
+                    <p>We select the data which contains the actual topic and which can be understood by everyone, Precisely we prvide best online content</p>
+                    <button class="main-btn mt-4">Learn More</button>
+                </div>
+            </div>
+            <div class="row align-items-center course-type">
+                <div class="col-lg-5 col-md-12 order-2 order-lg-1 pe-lg-5"> 
+                    <h2>Best Coursesbcg Features</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo repellat assumenda repudiandae iure officia est nulla consequatur natus!lorem6</p>
+                    <ul class="list-unstyled py-3">
+                        <li><i class="fas fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fas fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fas fa-check"></i> Lorem ipsum dolor sit.</li>
+                    </ul>
+                    <button class="main-btn mt-4">click here</button>
+                </div>
+                <div class="col-lg-7 col-md-12 mb-lg-0 mb-5 order-1 order-lg-2">
+                    <img src="./images/1659521015650.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </section>
+
+
+  <!--Qoute section-->
+  <section id="quote">
+    <div class="quote-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text-content">
+                        <h2>Until you get terminated! Be in A loop</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum tenetur voluptatem  Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!--Explore courses Section-->
+  <section id="explore-courses">
+    <section id="explore-courses wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text-content text-center">
+                        <h2>OUR POPULAR COURSES</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iusto sed consequatur voluptatibus. Explicabo quam est deleniti repellat!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                    <div class="card">
+                        <img src="./images/Java lang.jpg" alt="" class="img-fluid">
+                        <div class="p-4">
+                            <h4>C++</h4>
+                            <p>32 Topics | 18-25 days</p>
+                            <span>Medium</span>
+                           <center> <button class="mt-4 main-btn">Start Course</button></center>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                    <div class="card">
+                        <img src="./images/some-cpp1.png" alt="" class="img-fluid">
+                        <div class="p-4">
+                            <h4>Java</h4>
+                            <p> 25 Topics | 15-28 days</p>
+                            <span>Easy</span>
+                            <center> <button class="mt-4 main-btn">Start Course</button></center>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                    <div class="card">
+                        <img src="./images/some-python.png" alt="" class="img-fluid">
+                        <div class="p-4">
+                            <h4>Python</h4>
+                            <p>28 Topics | 15-20 days</p>
+                            <span>Hard</span>
+                        <center> <button class="mt-4 main-btn">Start Course</button></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+
+<!--Video links description-->
+<section id="Videolinks">
+     <div class="video-links wrapper">
+         <div class="container">
+             <div class="row align-items-center course-type">
+                 <div class="col-lg-5 col-md-12 order-2 order-lg-1 pe-lg-5 videos-des"> 
+                     <h2>Most Suggested Videos</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto libero, deleniti, facere eaque aperiam, minus cupiditate rem quibusdam a ad harum. Error, nisi.</p>
+                     <ul class="list-unstyled py-3">
+                         <li><i class="fab fa-youtube"></i>Lorem ipsum dolor sit.</li>
+                         <li><i class="fas fa-check"></i> Lorem ipsum dolor sit.</li>
+                     </ul>
+                 </div>
+                 <div class="col-lg-7 col-md-12 mb-lg-0 mb-5 order-1 order-lg-2">
+                     <img src="./images/online-videos-2.svg" alt="" class="img-fluid">
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+   </section>
+ 
+
+
+<!--OWN JS-->
+<script src="D:\Proj\main.js"></script>
+</body>
+</html>
+
+
+<!--CSS-->
+
+
+/* 1 General */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Background Color */
+    --primary-color: #16dad0;
+    --secondary-color: #0e1525;
+    --bg-dark-blue: #091020;
+    --bg-white: #fff;
+    --gray-color: #c6c9d8bf;
+    --gradient-color: linear-gradient(-224deg, var(--primary-color) 0, #337DFF 100%);
+    --gradient-text: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-color)', endColorstr='var(--secondary-color)', GradientType=1);
+
+    /* Text Color */
+    --primary-font:'Poppins', sans-serif;
+    --primary-text: #16dad0;
+    --text-gray: #c6c9d8bf;
+    --text-white: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 1 Custom CSS */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+.main-btn {
+    display: inline-block;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    padding: 10px 27px;
+    background-color: transparent;
+    border: 2px solid var(--gray-color);
+    color: var(--text-gray);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.main-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.main-btn-active{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-white);
+}
+h1 {
+    font-size: 54px;
+    line-height: 68px;
+    font-weight: 800;
+    color: var(--text-white);
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: var(--text-white);
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 19px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-white);
+}
+
+h6 {
+    color: var(--text-gray);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--text-gray);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.subtitle {
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    background: var(--primary-color);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*input:hover,
+input:focus,
+textarea:focus,
+textarea:hover,
+button {
+    outline: none !important;
+    box-shadow: none !important; 
+}
+
+/* 2 Navbar */
+.header_wrapper .navbar {
+    padding:15px 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    
+}
+
+.header_wrapper .navbar-brand img {
+    width: auto;
+    height: 58px;
+}
+
+.header_wrapper .navbar-toggler {
+    border: 0;
+    color: var(--gray-color);
+    line-height:2;
+}
+
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 10px;
+}
+
+.header_wrapper .nav-item .nav-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-gray);
+    display:inline-block;
+}
+
+.header_wrapper .nav-item .nav-link::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: 0.3s;
+    bottom: 0;
+}
+
+.header_wrapper .nav-item .nav-link.active::after,
+.header_wrapper .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover{
+    color:var(--text-white);
+}
+
+    .header-scrolled {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%; 
+        background-color: var(--bg-dark-blue);
+        -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+        box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+    }
+    
+    .header-scrolled .nav-item .nav-link.active,
+    .header-scrolled .nav-item .nav-link:hover {
+        color: var(--primary-text);
+    }
+
+/* 3 Banner */
+
+.banner_wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 750px;
+    background: url('../images/Picsart_22-08-03_17-16-15-862.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0 100px 0 ;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+video{
+    height: 100%;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video{
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.video-container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.content{
+    z-index: 10;
+}
+
+/*___________________________________remaining____________________________________________*/
+/*___________________________________remaining____________________________________________*/
+
+
+/*4 About*/
+#About h1{
+    margin-bottom: 7vh;
+}
+
+.course-type{
+    padding-top: 3.25rem;
+}
+.course-type ul li{
+    font-size: 1rem;
+    color: var(--text-white);
+    line-height: 2rem;
+    position: relative;
+    margin-left: 1.875rem;
+}
+.course-type ul li i{
+    left: -2.1875rem;
+    font-size: 1.25rem;
+    color: #16dad0;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.course-type h2{
+    padding-top: 7vh;
+}
+
+
+.about-section{
+    margin-top: 5vh;
+}
+
+
+.about-section h2{
+    font-size: 45px;    
+}
+
+.quote-section{
+    width: 100%;
+    height: 22.125rem;
+    background-image: url("../images/some-programming-1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+     background-size: cover;
+     padding-top: 6.25rem;
+     text-align: center;
+}
+
+#explore-courses .card{
+    background: transparent;
+    border-radius: 0.9375rem;
+    border:groove var(--primary-color);
+}
+#explore-courses .card img{
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    object-fit: cover;
+    height: 170px;
+} 
+
+#explore-courses .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(180, 170, 170);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid var(--primary-color);
+}
+
+#explore-courses .card h4{
+    color:#fff;
+}
+
+
+.video-links .videos-des{
+    margin-bottom: 28vh;
+}

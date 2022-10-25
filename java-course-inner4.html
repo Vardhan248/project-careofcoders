@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Java course Inner 4</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>JAVA</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Inheritance</h3>
+    <p>
+        
+        Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of OOPs <br>
+        (Object Oriented programming system).<br><br>
+        
+        The idea behind inheritance in Java is that you can create new classes<br>
+        that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also.<br><br>
+        
+        Inheritance represents the IS-A relationship which is also known as a parent-child relationship.<br><br>
+
+        Terms used in Inheritance <br><br>
+        Class: A class is a group of objects which have common properties. It is a template or blueprint from which objects are created.<br><br>
+        Sub Class/Child Class: Subclass is a class which inherits the other class. It is also called a derived class, extended class, or child class.<br><br>
+        Super Class/Parent Class: Superclass is the class from where a subclass inherits the features. It is also called a base class or a parent class.<br><br>
+        Reusability: As the name specifies, reusability is a mechanism which facilitates you to reuse the fields and methods of the existing class when you create a new class. You can use the same fields and methods already defined in the previous class.<br><br>
+
+
+       Types of Inheritance in Java : <br><br>
+
+        Below are the different types of inheritance which are supported by Java. <br><br>
+        
+        1. Single Inheritance: In single inheritance, subclasses inherit the features of one superclass. In the image below, class A serves as a base class for the derived class B.<br> <br>
+
+        2. Multilevel Inheritance: In Multilevel Inheritance, a derived class will be inheriting a base class and as well as the derived class also act as the base class to other class. In the below image, class A serves as a base class for the derived class B, which in turn serves as a base class for the derived class C. In Java, a class cannot directly access the grandparent’s members. <br><br>
+
+        3. Hierarchical Inheritance: In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one subclass. In the below image, class A serves as a base class for the derived class B, C and D. <br><br>
+
+        4. Multiple Inheritance (Through Interfaces): In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes. Please note that Java does not support multiple inheritances with classes. In java, we can achieve multiple inheritances only through Interfaces. In the image below, Class C is derived from interface A and B. <br><br>
+
+        5. Hybrid Inheritance(Through Interfaces): It is a mix of two or more of the above types of inheritance. Since java doesn’t support multiple inheritances with classes, hybrid inheritance is also not possible with classes. In java, we can achieve hybrid inheritance only through Interfaces. <br><br>
+        <iframe width="816" height="441" src="https://www.youtube.com/embed/nSSdMM6_O2E" title="Java Tutorial 9- Inheritance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Abstraction</h3>
+    <p> 
+        Abstraction is a process of hiding the implementation details and showing only functionality to the user. <br><br>
+
+        Another way, it shows only essential things to the user and hides the internal details, for example, sending SMS where you type the text and send the message. You don't know the internal processing about the message delivery.<br><br>
+
+        Ways to achieve Abstraction <br><br>
+There are two ways to achieve abstraction in java<br>
+
+Abstract class (0 to 100%)<br>
+Interface (100%)<br><br>
+
+<iframe width="768" height="480" src="https://www.youtube.com/embed/RcIsb9iFKH8" title="8.18 Abstract Class in Java Example" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p> 
+        
+    <br>
+    <hr>
+
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous ">
+            <a href="java-course-inner3.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="java-course-inner5.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

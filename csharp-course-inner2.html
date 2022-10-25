@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>c sharp course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C SHARP</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Oops concepts</h3>
+    <p> 
+        We have 4 basic principles in OOPs:<br>
+•	Abstraction<br>
+•	Encapsulation<br>
+•	Inheritance<br>
+•	polymorphism<br><br>
+Abstraction <br>
+Abstraction is the concept of showing only  necessary data or operation to the calling client. It can be achieved using the encapsulation concept. Suppose we are trying to save data. The client will send data to a business logic class and business logic will expose only Save method to the client. But before saving any data, our application will have some validation. Business logic takes care of such validation, those methods are not exposed to the client.<br><br>
+Encapsulation<br>
+Encapsulation is the concept of hiding data or method from the end client. We can achieve it using access modifiers, that is, by defining a property or method as private/protected etc we can control its visibility.<br><br>
+Inheritance<br>
+Inheritance is a concept of deriving a class from an existing class. We should use ":" for inheritance. In other words, if two class are having few common functionalities, define a parent class with common functions.<br><br>
+Polymorphism<br>
+Polymorphism is a concept that can have different behaviour in different situations. The word Polymorphism itself means different forms. We have two types of polymorphism.<br>
+1.	Static Polymorphism<br>
+2.	Dynamic Polymorphism <br>
+Static Polymorphism<br>
+The behaviour of this polymorphism is evaluated during compile time. Method overloading is an example of static polymorphism.<br>
+Dynamic Polymorphism <br>
+The behaviour of this polymorphism is evaluated during run time. Method overriding is an example of dynamic polymorphism. We need this behaviour when our application behaves differently in a different situation.<br>
+
+        <br>
+        <br>   
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/LP3llcExPK0" title="C# OOPS | Object Oriented Concepts | Object Oriented Programming | OOPS Concepts C#" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <hr>
+    <h3>Methods</h3>
+    <p>
+        Methods are generally the block of codes or statements in a program that gives the user the ability to reuse the same code which ultimately saves the excessive use of memory, acts as a time saver and more importantly, it provides a better readability of code. So basically, a method is a collection of statements that perform some specific task and return the result to the caller. A method can also perform some specific task without returning anything.<br>
+        <br>
+                                 Method Declaration<br>
+Method declaration means the way to construct method including its naming. <br>
+Syntax :  <br>
+<Access_Modifier> <return_type> <method_name>([<param_list>])<br><br>
+In C# a method declaration consists of the following components as follows :<br>
+•	Modifier : It defines access type of the method i.e. from where it can be accessed in your application. In C# there are Public, Protected, Private access modifiers. <br>
+•	Name of the Method : It describes the name of the user defined method by which the user calls it or refer it. Eg. GetName()<br>
+•	Return type: It defines the data type returned by the method. It depends upon user as it may also return void value i.e return nothing<br>
+•	Body of the Method : It refers to the line of code of tasks to be performed by the method during its execution. It is enclosed between braces.<br>
+•	Parameter list : Comma separated list of the input parameters are defined, preceded with their data type, within the enclosed parenthesis. If there are no parameters, then empty parentheses () have to use out. <br>
+Method Signature : Method Signature is defined by mainly two parameters(number of parameters, type of the parameters and order of the parameters), One of them is Method Name and second one is its Parameter list.<br>
+Method Naming : Name of a method or a function in any programming language whether in C++ or Java or C# holds great importance and is mainly used in order to call that method for its execution. For example, findSum, computeMax, setX and getX etc. There are certain pre-defined rules for naming methods which a user should follow :<br>
+•	The method name must be some kind of Noun or a verb.<br>
+•	It’s naming should be done in such a way that it must describe the purpose of that method.<br>
+•	The first letter of the method name can be either a small letter or a Capital letter, however, it is recommended to use the capital one.<br>
+These rules are not mandatory, but recommendable. Generally, a method has a unique name within the class in which it is defined but sometime a method might have the same name as other method names within the same class as method overloading is allowed in C#.<br>
+The Method Body : As discussed above the body of the method consists of statements of code which a user wants to perform. After the method has been declared, it is dependent on the user whether to define its implementation or not. Not writing any implementation, makes the method not to perform any task. However, when the user wants to perform certain tasks using method then it must write the statements for execution in the body of the method. The below syntax describes the basic structure of the method body :<br>
+Syntax :<br>
+<return_type> <method_name>(<parameter_list>)<br>
+{<br>
+     // Implementation of the method code goes here.....<br>
+}<br>
+}<br><br>
+ 
+Method Calling<br>
+Method Invocation or Method Calling is done when the user wants to execute the method. The method needs to be called for using its functionality. A method returns to the code that invoked it when:<br>
+•	It completes all the statements in the method<br>
+•	It reaches a return statement<br>
+•	Throws an exception <br>
+•	Method Parameters<br>
+•	There might be certain situations the user want to execute a method but sometimes that method requires some value inputs in order to execute and complete its tasks. These input values are known as Parameters in a computer language terms. Now, these parameters can be either int, long or float or double or char. However, it depends upon the user requirements. The methods in C# can be classified into different categories based on return type as well as input parameters.<br><br>
+Advantages of using the Methods : <br>
+There are many advantages of using methods. Some of them are listed below: <br>
+•	It makes the program well structured.<br>
+•	Methods enhance the readability of the code.<br>
+•	It provides an effective way for the user to reuse the existing code.<br>
+•	It optimizes the execution time and memory space. <br>
+
+        <br>
+<br>
+<iframe width="941" height="530" src="https://www.youtube.com/embed/XBH9WoEwXo8" title="C# - Methods" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+   <hr>
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="csharp-course-inner1.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="csharp-course-inner3.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!--<div class="features">
+        <h3>Features of this course :</h3>
+        <p><i class="far fa-video"></i> Video links for each topic</p>
+        <p><i class="far fa-cloud-download"></i> downloadable articles</p>
+        <p><i class="far fa-mobile-alt"></i> Can be viewed on  phone</p>
+        <p><i class="far fa-paperclip"></i> Quizz questions</p>
+        <p><i class="fas fa-certificate"></i> Will be certified </p>
+    </div>-->

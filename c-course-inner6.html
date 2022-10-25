@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>C course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C LANGUAGE</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Functions</h3>
+    <p> 
+        A function is a group of statements that together perform a task. Every C program has at least one function, which is main(), and all the most trivial programs can define additional functions. <br>
+You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division is such that each function performs a specific task.<br>
+A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.<br>
+The C standard library provides numerous built-in functions that your program can call. For example, strcat() to concatenate two strings, memcpy() to copy one memory location to another location, and many more functions.<br>
+A function can also be referred as a method or a sub-routine or a procedure, etc.<br><br>
+Defining a Function<br>
+The general form of a function definition in C programming language is as follows −<br>
+return_type function_name( parameter list ) {<br>
+   body of the function<br>
+}<br>
+A function definition in C programming consists of a function header and a function body. Here are all the parts of a function −<br>
+Return Type − A function may return a value. The return_type is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword void.<br>
+Function Name − This is the actual name of the function. The function name and the parameter list together constitute the function signature.<br>
+Parameters − A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function. Parameters are optional; that is, a function may contain no parameters.<br>
+Function Body − The function body contains a collection of statements that define what the function does.<br><br>
+Function Declarations<br>
+A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.<br>
+A function declaration has the following parts −<br>
+return_type function_name( parameter list );<br>
+
+Parameter names are not important in function declaration only their type is required, so the following is also a valid declaration −<br>
+
+int max(int, int);<br>
+Function declaration is required when you define a function in one source file and you call that function in another file. In such case, you should declare the function at the top of the file calling the function.<br><br>
+
+Calling a Function <br>
+While creating a C function, you give a definition of what the function has to do. To use a function, you will have to call that function to perform the defined task.<br>
+
+When a program calls a function, the program control is transferred to the called function. A called function performs a defined task and when its return statement is executed or when its function-ending closing brace is reached, it returns the program control back to the main program.<br>
+
+To call a function, you simply need to pass the required parameters along with the function name, and if the function returns a value, then you can store the returned value.<br><br>
+
+Function Arguments<br>
+If a function is to use arguments, it must declare variables that accept the values of the arguments. These variables are called the formal parameters of the function.<br>
+
+Formal parameters behave like other local variables inside the function and are created upon entry into the function and destroyed upon exit.<br>
+While calling a function, there are two ways in which arguments can be passed to a function <br>
+1.Call by value -This method copies the actual value of an argument into the formal parameter of the function. In this case, changes made to the parameter inside the function have no effect on the argument.<br>
+2.Call by reference-This method copies the address of an argument into the formal parameter. Inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.<br>
+
+By default, C uses call by value to pass arguments. In general, it means the code within a function cannot alter the arguments used to call the function.
+
+
+        
+        <br><br><br>
+
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/TxWKGhF9KdM" title="Functions in C | C Language Tutorial | Mr. Srinivas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Pointers</h3>
+    <p> 
+        Pointers in C are easy and fun to learn. Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation, cannot be performed without using pointers. So it becomes necessary to learn pointers to become a perfect C programmer. Let's start learning them in simple and easy steps. <br>
+        As you know, every variable is a memory location and every memory location has its address defined which can be accessed using ampersand (&) operator, which denotes an address in memory.<br><br>
+        What are Pointers?<br>
+        A pointer is a variable whose value is the address of another variable, i.e., direct address of the memory location. Like any variable or constant, you must declare a pointer before using it to store any variable address. The general form of a pointer variable declaration is −<br>
+        type *var-name;<br>
+        Here, type is the pointer's base type; it must be a valid C data type and var-name is the name of the pointer variable. The asterisk * used to declare a pointer is the same asterisk used for multiplication. However, in this statement the asterisk is being used to designate a variable as a pointer. Take a look at some of the valid pointer declarations –<br>
+        int    *ip;    /* pointer to an integer */<br>
+        double *dp;    /* pointer to a double */<br>
+        float  *fp;    /* pointer to a float */<br>
+        char   *ch     /* pointer to a character */<br>
+        The actual data type of the value of all pointers, whether integer, float, character, or otherwise, is the same, a long hexadecimal number that represents a memory address. The only difference between pointers of different data types is the data type of the variable or constant that the pointer points to.<br><br>
+        How to Use Pointers?<br>
+        There are a few important operations, which we will do with the help of pointers very frequently. (a) We define a pointer variable, (b) assign the address of a variable to a pointer and (c) finally access the value at the address available in the pointer variable. This is done by using unary operator * that returns the value of the variable located at the address specified by its operand.<br><br>
+        NULL Pointers<br>
+        It is always a good practice to assign a NULL value to a pointer variable in case you do not have an exact address to be assigned. This is done at the time of variable declaration. A pointer that is assigned NULL is called a null pointer.<br>
+        The NULL pointer is a constant with a value of zero defined in several standard libraries.<br>
+        In most of the operating systems, programs are not permitted to access memory at address 0 because that memory is reserved by the operating system. However, the memory address 0 has special significance; it signals that the pointer is not intended to point to an accessible memory location. But by convention, if a pointer contains the null (zero) value, it is assumed to point to nothing.<br>
+        To check for a null pointer, you can use an 'if' statement as follows −<br>
+        if(ptr)     /* succeeds if p is not null */<br>
+        if(!ptr)    /* succeeds if p is null */<br><br>
+        Pointers in Detail<br>
+        Pointers have many but easy concepts and they are very important to C programming. The following important pointer concepts should be clear to any C programmer −<br><br>
+        1.Pointer arithmetic<br>
+        There are four arithmetic operators that can be used in pointers: ++, --, +, -<br><br>
+        2.Array of pointers<br>
+        You can define arrays to hold a number of pointers.<br><br>
+        3.Pointer to pointer<br>
+        C allows you to have pointer on a pointer and so on.<br><br>
+        4.Passing pointers to functions in C<br>
+        Passing an argument by reference or by address enable the passed argument to be changed in the calling function by the called function.<br><br>
+        5.Return pointer from functions in C<br>
+        C allows a function to return a pointer to the local variable, static variable, and dynamically allocated memory as well.
+        
+
+        
+            <br><br><br>
+
+            <iframe width="942" height="530" src="https://www.youtube.com/embed/f2i0CnUOniA" title="Introduction to Pointers in C" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="c-course-inner5.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="c-course-inner7.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

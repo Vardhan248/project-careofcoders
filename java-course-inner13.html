@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Java course Inner 6</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>JAVA</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>File Handling</h3>
+
+
+    <p>
+        In Java, with the help of File Class, we can work with files. This File Class is inside the java.io package. The File class can be used by creating an object of the class and then specifying the name of the file.<br><br>
+
+Why File Handling is Required?<br>
+
+File Handling is an integral part of any programming language as file handling enables us to store the output of any particular program in a file and allows us to perform certain operations on it.<br>
+In simple words, file handling means reading and writing data to a file.<br><br>
+
+In Java, the concept Stream is used in order to perform I/O operations on a file. So at first, let us get acquainted with a concept known as Stream in Java.<br><br>
+
+Streams in Java<br>
+In Java, a sequence of data is known as a stream.<br>
+This concept is used to perform I/O operations on a file.<br><br>
+There are two types of streams :<br>
+1. Input Stream:<br>
+The Java InputStream class is the superclass of all input streams. The input stream is used to read data from numerous input devices like the keyboard, network, etc. InputStream is an abstract class, and because of this, it is not useful by itself. However, its subclasses are used to read data.<br><br>
+
+There are several subclasses of the InputStream class, which are as follows:<br>
+
+AudioInputStream<br>
+ByteArrayInputStream<br>
+FileInputStream<br>
+FilterInputStream<br>
+StringBufferInputStream<br>
+ObjectInputStream<br><br>
+Creating an InputStream<br>
+// Creating an InputStream<br>
+InputStream obj = new FileInputStream();<br><br>
+
+Methods of InputStream<br>
+1	read()	Reads one byte of data from the input stream.<br>
+2	read(byte[] array)()	Reads byte from the stream and stores that byte in the specified array.<br>
+3	mark()	It marks the position in the input stream until the data has been read.<br>
+4	available()	Returns the number of bytes available in the input stream.<br>
+5	markSupported()	It checks if the mark() method and the reset() method is supported in the stream.<br>
+6	reset()	Returns the control to the point where the mark was set inside the stream.<br>
+7	skips()	 Skips and removes a particular number of bytes from the input stream.<br>
+8	close()	Closes the input stream.<br><br>
+2. Output Stream:<br>
+The output stream is used to write data to numerous output devices like the monitor, file, etc. OutputStream is an abstract superclass that represents an output stream. OutputStream is an abstract class and because of this, it is not useful by itself. However, its subclasses are used to write data.<br><br>
+
+There are several subclasses of the OutputStream class which are as follows:<br>
+
+ByteArrayOutputStream<br>
+FileOutputStream<br>
+StringBufferOutputStream<br>
+ObjectOutputStream<br>
+DataOutputStream<br>
+PrintStream<br><br>
+Creating an OutputStream<br>
+// Creating an OutputStream<br>
+OutputStream obj = new FileOutputStream();<br><br>
+
+Methods of OutputStream<br>
+1.	write()	Writes the specified byte to the output stream.<br>
+2.	write(byte[] array)	Writes the bytes which are inside a specific array to the output stream.<br>
+3.	close()	Closes the output stream.<br>
+4.	flush()	Forces to write all the data present in an output stream to the destination.<br><br>
+Based on the data type, there are two types of streams :<br>
+
+1. Byte Stream:<br>
+This stream is used to read or write byte data. The byte stream is again subdivided into two types which are as follows:<br>
+
+Byte Input Stream: Used to read byte data from different devices.<br>
+Byte Output Stream: Used to write byte data to different devices.<br><br>
+2. Character Stream:<br>
+This stream is used to read or write character data. Character stream is again subdivided into 2 types which are as follows:<br>
+
+Character Input Stream: Used to read character data from different devices.<br>
+Character Output Stream: Used to write character data to different devices.<br>
+Owing to the fact that you know what a stream is, let’s polish up File Handling in Java by further understanding the various methods that are useful for performing operations on the files like creating, reading, and writing files.<br><br>
+
+Java File Class Methods <br>
+
+canRead()	 It tests whether the file is readable or not. 	Boolean<br>
+canWrite()	It tests whether the file is writable or not.	Boolean<br>
+createNewFile()	It creates an empty file.	Boolean<br>
+delete()	It deletes a file.	Boolean<br>
+exists()	It tests whether the file exists or not.	Boolean<br>
+length()	Returns the size of the file in bytes.	Long<br>
+getName()	 Returns the name of the file.	String<br>
+list()	Returns an array of the files in the directory.	String[] <br>
+mkdir()	 Creates a new directory.	Boolean<br>
+getAbsolutePath()	Returns the absolute pathname of the file.	String<br>
+Let us now get acquainted with the various file operations in Java.<br><br>
+
+File operations in Java<br>
+The following are the several operations that can be performed on a file in Java :<br>
+
+Create a File<br>
+Read from a File<br>
+Write to a File<br>
+Delete a File<br>
+Now let us study each of the above operations in detail.<br><br>
+
+1. Create a File<br>
+
+In order to create a file in Java, you can use the createNewFile() method.<br>
+If the file is successfully created, it will return a Boolean value true and false if the file already exists.<br><br>
+
+2. Read from a File: We will use the Scanner class in order to read contents from a file.<br><br>
+
+3. Write to a File: We use the FileWriter class along with its write() method in order to write some text to the file.<br><br>
+
+4. Delete a File: We use the delete() method in order to delete a file. <br><br><br>
+
+<iframe width="942" height="530" src="https://www.youtube.com/embed/SslMi6ptwH8" title="File Handling in Java | Reading and Writing File in Java | Java Training | Edureka" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </p>
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>JDBC</h3>
+    <p> 
+        JDBC stands for Java Database Connectivity. JDBC is a Java API to connect and execute the query with the database. It is a part of JavaSE (Java Standard Edition). JDBC API uses JDBC drivers to connect with the database. There are four types of JDBC drivers:<br><br>
+
+JDBC-ODBC Bridge Driver,<br>
+Native Driver,<br>
+Network Protocol Driver, and<br>
+Thin Driver<br>
+We have discussed the above four drivers in the next chapter.<br>
+
+We can use JDBC API to access tabular data stored in any relational database. By the help of JDBC API, we can save, update, delete and fetch data from the database. It is like Open Database Connectivity (ODBC) provided by Microsoft.<br>
+
+The current version of JDBC is 4.3. It is the stable release since 21st September, 2017. It is based on the X/Open SQL Call Level Interface. The java.sql package contains classes and interfaces for JDBC API. A list of popular interfaces of JDBC API are given below:<br><br>
+
+Driver interface<br>
+Connection interface<br>
+Statement interface<br>
+PreparedStatement interface<br>
+CallableStatement interface<br>
+ResultSet interface<br>
+ResultSetMetaData interface<br>
+DatabaseMetaData interface<br>
+RowSet interface<br><br>
+A list of popular classes of JDBC API are given below:<br>
+
+DriverManager class<br>
+Blob class<br>
+Clob class<br>
+Types class<br><br>
+Why Should We Use JDBC<br>
+Before JDBC, ODBC API was the database API to connect and execute the query with the database. But, ODBC API uses ODBC driver which is written in C language (i.e. platform dependent and unsecured). That is why Java has defined its own API (JDBC API) that uses JDBC drivers (written in Java language).<br><br>
+
+We can use JDBC API to handle database using Java program and can perform the following activities:<br>
+
+Connect to the database<br>
+Execute queries and update statements to the database<br>
+Retrieve the result received from the database.<br><br>
+
+What is API<br>
+API (Application programming interface) is a document that contains a description of all the features of a product or software. It represents classes and interfaces that software programs can follow to communicate with each other. An API can be created for applications, libraries, operating systems, etc.<br><br><br>
+
+<iframe width="942" height="530" src="https://www.youtube.com/embed/3OrEsC-QjUA" title="Java JDBC tutorial | Java Database Connectivity | Java Tutorial For Beginners | Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    </p> 
+        
+    <br>
+    <hr>
+    
+</div>
+
+
+<div class="congo">
+    <center>
+    <div class="congo-text">
+        <p>Congratulations! You have successfully completed your <span>Java course</span>. Please download the certificate  </p>
+    </div>
+
+    <canvas hidden id="canvas" height="707px" width="1000px"></canvas>
+
+    <div class="congo-btn">
+        <a href="" id="congo-btn" class="main-btn">Download</a>
+    </div>
+</center>
+</div>
+
+<hr>
+
+    <div class="pagination-div">
+        <div class="previous ">
+            <a href="java-course-inner12.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next last-next">
+            <a href="" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="java_certi.js"></script>
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

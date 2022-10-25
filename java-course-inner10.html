@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Java course Inner 10</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>JAVA</h2>
+                </div>
+            </div>
+
+            <div class="actual-content">
+                <h3>Lists</h3>
+                <p>
+                    List in Java provides the facility to maintain the ordered collection. It contains the index-based methods to insert, update, delete and search the elements. It can have the duplicate elements also. We can also store the null elements in the list. <br><br>
+
+                    The List interface is found in the java.util package and inherits the Collection interface. It is a factory of ListIterator interface. Through the ListIterator, we can iterate the list in forward and backward directions. The implementation classes of List interface are ArrayList, LinkedList, Stack and Vector. The ArrayList and LinkedList are widely used in Java programming. The Vector class is deprecated since Java 5.<br><br>
+
+                    Create & Declare List : <br>
+                    We have already stated that List is an interface and is implemented by classes like ArrayList, Stack, Vector and LinkedList. Hence you can declare and create instances of the list in any one of the following ways: <br><br>
+
+                    List linkedlist = new LinkedList(); <br>
+                    List arrayList = new ArrayList();<br>
+                    List vec_list = new Vector();   <br>
+                    List stck_list = new Stack();<br><br>
+
+                    Some of the important points about Java List are; <br> <br>
+
+                    • Java List interface is a member of the Java Collections Framework. <br>
+                    • List allows you to add duplicate elements.<br>
+                    • List allows you to have ‘null’ elements.<br>
+                    • List interface got many default methods in Java 8, for example replaceAll, sort and spliterator.<br>
+                    • List indexes start from 0, just like arrays.<br>
+                    • List supports Generics and we should use it whenever possible. Using Generics with List will avoid ClassCastException at runtime.<br><br>
+                    
+
+                    Some List Methods are : <br><br>
+
+                    1. int size(): to get the number of elements in the list. <br>
+                    2. boolean isEmpty(): to check if list is empty or not.<br>
+                    3. boolean contains(Object o): Returns true if this list contains the specified element.<br>
+                    4. Iterator< E > iterator(): Returns an iterator over the elements in this list in proper sequence.<br>
+                    5. Object[] toArray(): Returns an array containing all of the elements in this list in proper sequence<br>
+                    6. boolean add(E e): Appends the specified element to the end of this list.<br>
+                    7. boolean remove(Object o): Removes the first occurrence of the specified element from this list.<br>
+                    8. boolean retainAll(Collection<?> c): Retains only the elements in this list that are contained in the specified collection.<br>
+                    9. void clear(): Removes all the elements from the list. <br>
+                    10. E get(int index): Returns the element at the specified position in the list.<br>
+                    11. E set(int index, E element): Replaces the element at the specified position in the list with the specified element.<br>
+                    12. ListIterator< E > listIterator(): Returns a list iterator over the elements in the list.<br>
+                    13. List< E > subList(int fromIndex, int toIndex): Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive. The returned list is backed by this list, so non-structural changes in the returned list are reflected in this list, and vice-versa.<br><br>
+                    
+
+                    <iframe width="768" height="480" src="https://www.youtube.com/embed/EKSfTGHZ_ZE" title="14.3 Collection and Generics | List Interface" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            
+                <br>
+                <hr>
+                <br>
+            
+            
+                <h3>Exception handling</h3>
+                <p> 
+                    
+                    The Exception Handling in Java is one of the powerful mechanism to handle the runtime errors so that the normal flow of the application can be maintained. <br><br>
+
+                    In Java, an exception is an event that disrupts the normal flow of the program. It is an object which is thrown at runtime. <br> <br>
+
+                    Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc. <br><br>
+
+                    The core advantage of exception handling is to maintain the normal flow of the application. An exception normally disrupts the normal flow of the application; that is why we need to handle exceptions. <br><br>
+
+                    Types of Java Exceptions :  <br>
+                    There are mainly two types of exceptions: <br> checked and unchecked. An error is considered as the unchecked exception. However, according to Oracle, there are three types of exceptions namely: <br><br>
+                    
+                    1. Checked Exception <br>
+                    Unchecked Exception<br>
+                    Error<br><br>
+
+                    Difference between Checked and Unchecked Exceptions : <br><br>
+                    1) Checked Exception<br>
+                    The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.<br><br>
+                    
+                    2) Unchecked Exception<br>
+                    The classes that inherit the RuntimeException are known as unchecked exceptions. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc. Unchecked exceptions are not checked at compile-time, but they are checked at runtime.<br><br>
+                    
+                    3) Error<br>
+                    Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.<br><br>
+
+
+
+                   Keywords used in Exception handling are: <br>
+                   try, catch, finally, throws. <br><br>
+
+                   <iframe width="853" height="480" src="https://www.youtube.com/embed/W-N2ltgU-X4" title="Exception Handling In Java | Exception Handling In Java With Examples | Java Tutorial | Edureka" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </p> 
+                    
+                <br>
+                <hr>
+            
+            
+                
+            </div>
+
+    <div class="pagination-div">
+        <div class="previous ">
+            <a href="java-course-inner10.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="java-course-inner11.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

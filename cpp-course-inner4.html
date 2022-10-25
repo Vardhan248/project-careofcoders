@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Cpp course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C++ LANGUAGE</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>STRINGS:</h3>
+    <p> 
+        A string in C++ is a type of object representing a collection (or sequence) of different characters. Strings in C++ are a part of the standard string class (std::string). The string class stores the characters of a string as a collection of bytes in contiguous memory locations. Strings are most commonly used in the programs where we need to work with texts. We can perform various operations on the strings in C++. For example, reversing, concatenating, or passing as an argument to a function.<br><br>
+The syntax to create a string in C++ is quite simple. We use the string keyword to create a string in C++. However, we also need to include the standard string class in our program before using this keyword.<br><br>
+To provide our program(s) input from the user, we generally use the cin keyword along with the extraction operator (>>). By default, the extraction operator considers white space (such as space, tab, or newline) as the terminating character. So, suppose the user enters "New Delhi" as the input. In that case, only "New" will be considered input, and "Delhi" will be discarded.
+
+        
+
+        <br> <br>
+                
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/3rDp0yOACZQ" title="C++ Programming Language Tutorial | Strings in C++ | GeeksforGeeks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>C++ REFERENCES AND POINTERS:</h3>
+    <p> 
+        C++ Reference vs Pointer<br>
+        C++ reference and pointer seem to be similar, but there are some differences that exist between them. A reference is a variable which is another name of the existing variable, while the pointer is variable that stores the address of another variable.<br><br>
+        What is Reference?<br>
+        A reference is a variable that is referred to as another name for an already existing variable. The reference of a variable is created by storing the address of another variable.<br>
+        A reference variable can be considered as a constant pointer with automatic indirection. Here, automatic indirection means that the compiler automatically applies the indirection operator (*).<br>
+        Example of reference:<br>
+        1.	int &a = i;  <br>
+        In the above declaration, 'a' is an alias name for 'i' variable. We can also refer to the 'i' variable through 'a' variable also.<br><br>
+        What is Pointer?<br>
+        A pointer is a variable that contains the address of another variable. It can be dereferenced with the help of (*) operator to access the memory location to which the pointer points.<br><br>
+        Differences between Reference and Pointer<br>
+        The following are the differences between reference and pointer:<br><br>
+        o	Definition<br>
+        A reference variable is another name for an already existing variable. It is mainly used in 'pass by reference' where the reference variable is passed as a parameter to the function and the function to which this variable is passed works on the original copy of the variable.<br>
+        Whereas, Pointer is a variable that stores the address of another variable. It makes the programming easier as it holds the memory address of some variable.<br><br>
+        o	Declaration<br>
+        We can declare a reference variable by adding a '&' symbol before a variable. If this symbol is used in the expression, then it will be treated as an address operator.<br>
+        Before using a pointer variable, we should declare a pointer variable, and this variable is created by adding a '*' operator before a variable.<br><br>
+        o	Reassignment<br>
+        We cannot reassign the reference variable.<br>
+        Whereas, the pointers can be re-assigned. This reassignment is useful when we are working with the data structures such as linked list, trees, etc.<br><br>
+        o	Memory Address<br>
+        In the case of reference, both the reference and actual variable refer to the same address. The new variable will not be assigned to the reference variable until the actual variable is either deleted or goes out of the scope.<br>
+        In the case of pointers, both the pointer variable and the actual variable will have different memory addresses. Let's understand this through an example.<br><br>
+        o	NULL value<br>
+        We cannot assign the NULL value to the reference variable, but the pointer variable can be assigned with a NULL value.<br><br>
+        o	Indirection<br>
+        Pointers can have pointer to pointer offering more than one level of indirection.<br>
+        In the case of References, reference to reference is not possible. If we try to do c++ program will throw a compile-time error<br><br>
+        o	Arithmetic Operations<br>
+        As we know that arithmetic operations can be applied to the pointers named as "Pointer Arithmetic", but arithmetic operations cannot be applied on the references. There is no word, i.e., Reference Arithmetic exists in C++.<br>
+        The arithmetic operations are not allowed with references.<br><br>
+        DYNAMIC MEMORY ALLOCATION:<br>
+        Memory allocation<br>
+        Reserving or providing space to a variable is called memory allocation. For storing the data, memory allocation can be done in two ways -<br>
+        o	Static allocation or compile-time allocation - Static memory allocation means providing space for the variable. The size and data type of the variable is known, and it remains constant throughout the program.<br>
+        o	Dynamic allocation or run-time allocation - The allocation in which memory is allocated dynamically. In this type of allocation, the exact size of the variable is not known in advance. Pointers play a major role in dynamic memory allocation.<br><br>
+        Why Dynamic memory allocation?<br>
+        Dynamically we can allocate storage while the program is in a running state, but variables cannot be created "on the fly". Thus, there are two criteria for dynamic memory allocation -<br>
+        o	A dynamic space in the memory is needed.<br>
+        o	Storing the address to access the variable from the memory<br>
+        Similarly, we do memory de-allocation for the variables in the memory.<br><br>
+        In C++, memory is divided into two parts -<br>
+        o	Stack - All the variables that are declared inside any function take memory from the stack.<br>
+        o	Heap - It is unused memory in the program that is generally used for dynamic memory allocation.<br><br>
+        Dynamic memory allocation using the new operator<br>
+        To allocate the space dynamically, the operator new is used. It means creating a request for memory allocation on the free store. If memory is available, memory is initialized, and the address of that space is returned to a pointer variable.<br>
+        Syntax<br>
+        Pointer_variable = new data_type;<br>
+        The pointer_varible is of pointer data_type. The data type can be int, float, string, char, etc.<br>
+        Example<br>
+        int *m = NULL // Initially we have a NULL pointer<br>
+        m = new int // memory is requested to the variable<br>
+        It can be directly declared by putting the following statement in a line -<br>
+        int *m = new int<br><br>
+        Initialize memory<br>
+        We can also initialize memory using new operator.<br>
+        For example<br>
+        int *m = new int(20);<br>
+        Float *d = new float(21.01);<br><br>
+        Allocate a block of memory<br>
+        We can also use a new operator to allocate a block(array) of a particular data type.<br>
+        For example<br>
+        int *arr = new int[10]<br>
+        Here we have dynamically allocated memory for ten integers which also returns a pointer to the first element of the array. Hence, arr[0] is the first element and so on.<br>
+        Note<br>
+        o	The difference between creating a normal array and allocating a block using new normal arrays is deallocated by the compiler. Whereas the block is created dynamically until the programmer deletes it or if the program terminates.<br>
+        o	If there is no space in the heap memory, the new request results in a failure throwing an exception(std::bad_alloc) until we use nonthrow with the new operator. Thus, the best practice is to first check for the pointer variable.<br>
+        Delete operator
+        We delete the allocated space in C++ using the delete operator.
+        Syntax
+        delete pointer_variable_name
+        Example
+        delete m; // free m that is a variable
+        delete [] arr; // Release a block of memory        
+
+        <br><br>
+
+        <iframe width="941" height="530" src="https://www.youtube.com/embed/p8ehAjZWjPw" title="Functions in C++ Programming | Part - 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <br>
+    <hr>
+
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="cpp-course-inner3.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="cpp-course-inner5.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

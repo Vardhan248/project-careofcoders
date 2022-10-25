@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Cpp course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C++ LANGUAGE</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>ARRAYS:</h3>
+    <p> 
+        C++ Arrays<br>
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.<br><br>
+To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store:<br>
+string cars[4];<br>
+
+We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:<br>
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};<br>
+
+To create an array of three integers, you could write:<br>
+int myNum[3] = {10, 20, 30};<br><br>
+
+________________________________________<br>
+Access the Elements of an Array<br>
+You access an array element by referring to the index number inside square brackets [].
+
+        
+
+        <br> <br>
+                
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/ENDaJi08jCU" title="Arrays in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>FUNCTIONS:</h3>
+    <p> 
+        A function is a group of statements that together perform a task. Every C++ program has at least one function, which is main(), and all the most trivial programs can define additional functions.<br>
+You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division usually is such that each function performs a specific task.<br>
+A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.<br>
+The C++ standard library provides numerous built-in functions that your program can call. For example, function strcat() to concatenate two strings, function memcpy() to copy one memory location to another location and many more functions.<br>
+A function is known with various names like a method or a sub-routine or a procedure etc.<br><br>
+Defining a Function<br>
+The general form of a C++ function definition is as follows −<br>
+return_type function_name( parameter list ) {<br>
+   body of the function<br>
+}<br><br>
+A C++ function definition consists of a function header and a function body. Here are all the parts of a function −<br>
+•	Return Type − A function may return a value. The return_type is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword void.<br>
+•	Function Name − This is the actual name of the function. The function name and the parameter list together constitute the function signature.<br>
+•	Parameters − A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function. Parameters are optional; that is, a function may contain no parameters.<br>
+•	Function Body − The function body contains a collection of statements that define what the function does.<br><br>
+Function Declarations<br>
+A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.<br>
+A function declaration has the following parts −<br>
+return_type function_name( parameter list );<br>
+Example : int max(int num1, int num2);<br>
+Parameter names are not important in function declaration only their type is required, so following is also valid declaration −<br>
+Example : int max(int, int);<br><br>
+Function declaration is required when you define a function in one source file and you call that function in another file. In such case, you should declare the function at the top of the file calling the function.<br><br>
+Calling a Function<br>
+While creating a C++ function, you give a definition of what the function has to do. To use a function, you will have to call or invoke that function.<br>
+When a program calls a function, program control is transferred to the called function. A called function performs defined task and when it’s return statement is executed or when its function-ending closing brace is reached, it returns program control back to the main program.<br>
+To call a function, you simply need to pass the required parameters along with function name, and if function returns a value, then you can store returned value. <br><br>
+Function Arguments<br>
+If a function is to use arguments, it must declare variables that accept the values of the arguments. These variables are called the formal parameters of the function.<br>
+The formal parameters behave like other local variables inside the function and are created upon entry into the function and destroyed upon exit.<br>
+While calling a function, there are two ways that arguments can be passed to a function −<br>
+1.	Call By Value: This method copies the actual value of an argument into the formal parameter of the function. In this case, changes made to the parameter inside the function have no effect on the argument.<br>
+2.	Call By Pointer: This method copies the address of an argument into the formal parameter. Inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.<br>
+3.	Call By Reference: This method copies the reference of an argument into the formal parameter. Inside the function, the reference is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.<br>
+By default, C++ uses call by value to pass arguments. In general, this means that code within a function cannot alter the arguments used to call the function.
+
+
+
+        <br><br>
+
+        <iframe width="941" height="530" src="https://www.youtube.com/embed/p8ehAjZWjPw" title="Functions in C++ Programming | Part - 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <br>
+    <hr>
+
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="cpp-course-inner2.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="cpp-course-inner4.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

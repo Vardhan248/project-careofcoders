@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>C course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C LANGUAGE</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Arrays and strings in c</h3>
+    <p> 
+        C Array <br>
+An array is defined as the collection of similar type of data items stored at contiguous memory locations. Arrays are the derived data type in C programming language which can store the primitive type of data such as int, char, double, float, etc. It also has the capability to store the collection of derived data types, such as pointers, structure, etc. The array is the simplest data structure where each data element can be randomly accessed by using its index number.<br>
+C array is beneficial if you have to store similar elements. For example, if we want to store the marks of a student in 6 subjects, then we don't need to define different variables for the marks in the different subject. Instead of that, we can define an array which can store the marks in each subject at the contiguous memory locations.<br>
+By using the array, we can access the elements easily. Only a few lines of code are required to access the elements of the array.<br><br>
+Properties of Array<br>
+The array contains the following properties.<br>
+1.	Each element of an array is of same data type and carries the same size, i.e., int = 4 bytes.<br>
+2.	Elements of the array are stored at contiguous memory locations where the first element is stored at the smallest memory location.<br>
+3.	Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.<br><br>
+Advantage of C Array<br>
+1) Code Optimization: Less code to the access the data.<br>
+2) Ease of traversing: By using the for loop, we can retrieve the elements of an array easily.<br>
+3) Ease of sorting: To sort the elements of the array, we need a few lines of code only.<br>
+4) Random Access: We can access any element randomly using the array.<br><br>
+Disadvantage of C Array<br>
+1) Fixed Size: Whatever size, we define at the time of declaration of the array, we can't exceed the limit. So, it doesn't grow the size dynamically like LinkedList which we will learn later.<br><br>
+Declaration of C Array<br>
+We can declare an array in the c language in the following way.<br>
+1.	data_type array_name[array_size];  <br>
+Initialization of C Array<br>
+The simplest way to initialize an array is by using the index of each element. We can initialize each element of the array by using the index.<br>
+C Array: Declaration with Initialization<br>
+We can initialize the c array at the time of declaration. <br>
+In such case, there is no requirement to define the size. <br>
+String in C programming is a sequence of characters terminated with a null character ‘\0’. Strings are defined as an array of characters. The difference between a character array and a string is the string is terminated with a unique character ‘\0’.<br><br>
+Declaration of Strings<br>
+Declaring a string is as simple as declaring a one-dimensional array. Below is the basic syntax for declaring a string.<br>
+char str_name[size];<br>
+In the above syntax str_name is any name given to the string variable and size is used to define the length of the string, i.e the number of characters strings will store. <br>
+Note: There is an extra terminating character which is the Null character (‘\0’) used to indicate the termination of a string that differs strings from normal character arrays. When a Sequence of characters enclosed in the double quotation marks is encountered by the compiler, a null character ‘\0’ is appended at the end of the string by default.<br><br>
+Initializing a String<br>
+A string can be initialized in different ways<br>
+4 Ways to Initialize a String in C<br>
+1. Assigning a string literal without size: String literals can be assigned without size. Here, the name of the string str acts as a pointer because it is an array.<br>
+char str[] = "GeeksforGeeks"; <br>
+2. Assigning a string literal with a predefined size: String literals can be assigned with a predefined size. But we should always account for one extra space which will be assigned to the null character. If we want to store a string of size n then we should always declare a string with a size equal to or greater than n+1.<br>
+char str[50] = "GeeksforGeeks";<br>
+3. Assigning character by character with size: We can also assign a string character by character. But we should remember to set the end character as ‘\0’ which is a null character.<br>
+char str[14] = { 'G','e','e','k','s','f','o','r','G','e','e','k','s','\0'};<br>
+4. Assigning character by character without size: We can assign character by character without size with the NULL character at the end. The size of the string is determined by the compiler automatically.<br>
+char str[] = { 'G','e','e','k','s','f','o','r','G','e','e','k','s','\0'};<br>
+strings can be printed using normal printf statements just like we print any other variable. Unlike arrays, we do not need to print a string, character by character.<br><br>
+How to Read a String From User?<br>
+string can also be read using a single scanf statement. Also, you might be thinking that why we have not used the ‘&’ sign with the string name ‘str’ in scanf statement! To understand this you will have to recall your knowledge of scanf. <br>
+We know that the ‘&’ sign is used to provide the address of the variable to the scanf() function to store the value read in memory. As str[] is a character array so using str without braces ‘[‘ and ‘]’ will give the base address of this string. That’s why we have not used ‘&’ in this case as we are already providing the base address of the string to scanf.<br><br>
+How to Read a Line of Text in C?<br>
+We can use the fgets() function to read a line of string and gets() to read characters from the standard input  (stdin) and store them as a C string until a newline character or the End-of-file (EOF) is reached.<br><br>
+Passing Strings to Function<br>
+As strings are character arrays, so we can pass strings to function in the same way we pass an array to a function<br><br>
+Passing Strings to Function<br>
+As strings are character arrays, so we can pass strings to function in the same way we pass an array to a functionStrings and Pointers<br>
+In Arrays, the variable name points to the address of the first element. Similar to Arrays in C we can create a character pointer to a string that points to the starting address of the string which is the first character of the string.<br>
+Most Used Functions in C  Strings:<br>
+strlen(string_name)-Returns the length of string name.<br>
+strcpy(s1, s2)-Copies the contents of string s2 to string s1.<br>
+strcmp(str1, str2)-Compares the first string with the second string. If strings are the same it returns 0.<br>
+strcat(s1, s2)-Concat s1 string with s2 string and the result is stored in the first string.<br>
+strlwr()-Converts string to lowercase.<br>
+strupr()-Converts string to uppercase.<br>
+strstr(s1, s2)-Find the first occurrence of s2 in s1.
+
+        
+        <br><br><br>
+
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/DypDaVhNaCE" title="C Programming | Array And String In C Part-01 (1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Control statements</h3>
+    <p> 
+The control statements used in the C language help a user to specify a program control’s flow. In simpler words, the control statements help users specify the order of execution of the instructions present in a program. These make it possible for the program to make certain decisions, perform various tasks repeatedly, or even jump from any one section of the code to a different section.<br><br>
+Control Statements Types Used in C Language<br>
+The C language provides support for the following set of statements in its program:<br>
+If Statements<br>
+Switch Statement<br>
+Conditional Operator Statement<br>
+Goto Statement<br>
+Loop Statements<br><br>
+1. The If Statements<br>
+This type of statement would enable a programmer to choose various instruction sets on the basis of the available condition. The instruction sets will only get executed when the evaluation of the condition turns out to be true. In case the evaluation of the condition is false, there will be an execution of a different instruction set. These are also known as decision control statements. These are of the following types:<br>
+Simple else or Null else<br>
+Else if ladder<br>
+Nested if<br>
+If… else<br><br>
+1.1. The If… Else Statement<br>
+When we use the if… else statement, there occurs an execution of two different types of statements in a program. First, if the available condition in the program is true, then there will be an execution of the first statement. The execution of the second condition will only occur if the condition available to us is false.<br>
+The syntax for this statement is as follows:<br>
+If (condition 1)<br>
+{<br>
+Statement 1 (s1);<br>
+}<br>
+else<br>
+{<br>
+Statement 2 (s2)<br>
+}<br>
+Statement<br><br>
+1.2. The Nested If Statement<br>
+In this case, the condition available in the next if statement (the second statement) will only get evaluated if the evaluation of the condition available in the first statement turns out to be true. This occurs throughout the program that has a nested statement.<br>
+The syntax for this statement is as follows:<br>
+If (condition 1)<br>
+{<br>
+If (condition 2)<br>
+{<br>
+Statement 1 (s1);<br>
+}<br>
+Else<br>
+{<br>
+Statement 2 (s2)<br>
+}<br>
+}<br><br>
+1.3. The Else If Ladder<br>
+In this statement, the execution of an array of instructions occurs only when the available condition is correct. The verification of the next condition occurs when this first condition is incorrect. In case all of the specifications fail even after the verification, then there will be an execution of the default block statements. The remainder of the program’s ladder is shown below.<br>
+The syntax for this statement is as follows:<br>
+If (condition 1)<br>
+{<br>
+Statement 1 (s1);<br>
+}<br>
+Else if (condition 2)<br>
+{<br>
+Statement 2 (s2);<br>
+}<br>
+else if (condition 3)<br>
+{<br>
+Statement 3 (s3)<br>
+}<br>
+…<br>
+Else<br>
+{<br>
+Statement 4 (s4)<br>
+}<br>
+Statement (s)<br><br>
+1.4. The Simple Else or Null Else<br>
+This condition occurs when a programmer can skip or execute a set of various instructions on the basis of the condition value. We select a one-way, simple statement. When the available condition gets evaluated as true, then a set of various statements will be carried out. In case the condition is false, then the control here will proceed ahead in the program with the declaration mentioned below, after the program’s if declaration.<br>
+The syntax for this statement is as follows:<br>
+If (condition1)<br>
+{<br>
+Statement 1 (s1);<br>
+}<br>
+Statement 2 (s2);<br><br>
+2. The Switch Statements<br>
+The C language offers its users with a selection statement in various ways in case a program becomes difficult to read with an increased number of conditions. A switch statement is a multi-way type of selection statement that would resolve this issue. The switch declaration comes into play when more than three alternatives (conditions) exist in a program. This command then switches between all the available blocks on the basis of the expression value. Then, each block has a corresponding value with it.<br>
+The syntax for this statement is as follows:<br>
+Switch (expression_A)<br>
+{<br>
+Label case_A:<br>
+Statement A (sA);<br>
+Break;<br>
+Label case_B:<br>
+Statement B (sB);<br>
+Break;<br>
+Label case_C;<br>
+Statement C (sC);<br>
+Break;<br>
+….<br>
+Label case_Z:<br>
+Statement Z (sZ);<br>
+Break;<br>
+Default:<br>
+Statement_1 (s1);<br>
+Break;<br>
+}<br>
+Every block is shown here with the use of the case keyword. As a matter of fact, the case keyword is also followed by the block label. Note that the break statement and default block statement are very optional in the case of the switch statement.<br><br>
+3. The Conditional Operator Statements<br>
+The C language also comes with a very unusual operator for its programmers – the conditional operator.<br>
+The syntax of the conditional operator statements is as follows:<br>
+(condition 1)? expression_1: expression_2<br>
+Here, the execution of the expression_1 will only occur when the given condition is valid. In case this statement is incorrect, then the execution of the expression_2 will occur.<br><br>
+4. The Goto Statement<br>
+The Goto statement is especially known in the case of jumping control statements. We mainly use the goto statement when we want to transfer a program’s control from any one block to another. Also, we use the goto keyword for the declaration of the goto statement.<br>
+The syntax of the goto statement is as follows:<br>
+goto name_of_label;<br>
+name_of_label;<br>
+In the syntax given above, we have used the goto as a keyword for transferring the control of the program to the name_of_label. Here, the name_of_label refers to a variable’s name. Thus, in simpler words, the goto here will ultimately transfer the program’s control to the name_of_label. Thus, there will occur an execution of all those statements that are followed by the name_of_label.<br><br>
+5. The Loop Statements<br>
+A programmer in C might want to repeat any set of instructions or certain statements in the program to meet the necessary requirements. In such instances, it becomes difficult to rewrite and repeat everything. And that is exactly where we would like to create loops using the looping declarations. Loop control statements help in such types of situations in C. We have the following types of loops in C:<br>
+Do While Loop<br>
+While Loop<br>
+For Loop<br>
+
+        
+            <br><br><br>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLVlQHNRLflP-0qEBMjSKusAjOXa875ajR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="c-course-inner4.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="c-course-inner6.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

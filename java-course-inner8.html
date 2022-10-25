@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Java course Inner 6</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>JAVA</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Access Modifiers</h3>
+
+
+    <p>
+        There are two types of modifiers in Java: access modifiers and non-access modifiers. <br><br>
+        The access modifiers in Java specifies the accessibility or scope of a field, method, constructor, or class. We can change the access level of fields, constructors, methods, and class by applying the access modifier on it.<br><br>
+        
+        There are four types of Java access modifiers:<br>
+        
+        Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.<br>
+        Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.<br>
+        Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.<br>
+        Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.<br><br>
+        
+        1) Private-The private access modifier is accessible only within the class.<br>
+        Role of Private Constructor-If you make any class constructor private, you cannot create the instance of that class from outside the class. <br>
+        2) Default-If you don't use any modifier, it is treated as default by default. The default modifier is accessible only within package. It cannot be accessed from outside the package. It provides more accessibility than private. But, it is more restrictive than protected, and public.<br>
+        3) Protected-The protected access modifier is accessible within package and outside the package but through inheritance only.The protected access modifier can be applied on the data member, method and constructor. It can't be applied on the class.It provides more accessibility than the default modifer.<br>
+        4) Public-The public access modifier is accessible everywhere. It has the widest scope among all other modifiers.<br><br><br>
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/5nNTafzmX9o" title="7.11 Access Modifiers in Java | Public, Protected, Private" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>classes</h3>
+    <p> 
+        A class is a blueprint in the Java programming language from which an individual object can be built. In Java, we may declare a class by using the class keyword. Class members and functions are declared simply within the class. Classes are required for the creation of Java programs. The object-oriented paradigm (OOP) allows users to describe real-world objects. Also, a class is sometimes known as a user-defined data type. The following components make up a class declaration: <br>
+
+        Modifiers<br>
+        Class name<br>
+        Keywords<br>
+        The class body within curly brackets {}.<br>
+        Class in Java  <br><br>
+        
+        1. Class is a set of object which shares common characteristics/ behavior and common properties/ attributes.<br>
+        2. Class is not a real world entity. It is just a template or blueprint or prototype from which objects are created.<br>
+        3. Class does not occupy memory.<br>
+        4. Class is a group of variables of different data types and group of methods.<br><br>
+        
+        A class in java can contain:<br>
+        • data member<br>
+        • method<br>
+        • constructor<br>
+        • nested class and<br> 
+        • interface   <br><br>
+        
+        Syntax to declare a class:<br>
+
+access_modifier class<class_name><br>
+{  <br>
+    data member;  <br>
+    method;  <br>
+    constructor;<br>
+    nested class;<br>
+    interface;<br>
+}<br><br>
+      
+Types of Classes<br>
+Final Class<br>
+Static Class<br>
+Abstract Class<br>
+Concrete Class<br>
+POJO Class<br>
+Singleton Class<br>
+Inner Class<br><br>
+
+1. Final Class<br>
+When a variable, function, or class is declared final, its value persists throughout the program. Declaring a method with the final keyword indicates that the method cannot be overridden by subclasses. That is a class that is marked final cannot be subclasses. This is very useful when creating immutable classes such as  String classes. A class cannot be mutated unless it is declared final. <br><br>
+
+2. Static Class<br>
+Static is a Java word that explains how objects are kept in memory. A static object belongs to that class rather than instances of that class. The primary function of the class is to provide blueprints for the inherited classes. A static class has only static members. An object cannot be created for a static class.<br><br>
+
+3. Abstract Class<br>
+A class that has zero or more abstract methods and is specified with the abstract keyword is called an abstract class. We must rigorously extend the abstract classes to a concrete class in order to use them because they are incomplete classes. Constructors and static methods can also be included. It can have final methods, which force the subclass to keep the body of the method unhung.<br><br>
+
+4. Concrete Class<br>
+A normal class with an implementation for all of its methods and no abstract methods is called a concrete class. They are not permitted to have any processes that are not in use at the time. If it implements all of its methods, a concrete class can extend its parent, an abstract class, or an interface. It’s a fully working, instantiable class.<br><br>
+
+5. POJO Class<br>
+“Plain Old Java Object” is an abbreviation for “Plain Old Java Object.” A POJO class has only private variables with setter and getter methods to access them. It’s a pure data structure with fields that can override some Object methods (e.g. equals) or other interfaces (e.g. serializable), but it has no behavior of its own.<br><br>
+
+POJO class properties:<br>
+
+When writing a POJO class, public setter and getter methods are required.<br>
+Private variables should be used for all instance variables.<br>
+It should not extend classes that have already been defined.<br>
+It should not implement interfaces that have been pre-defined.<br>
+There should be no pre-defined annotations.<br>
+It might not have a function Object() { [native code] } that takes no arguments.<br><br>
+
+6. Singleton Class<br>
+A singleton class is one that has just one object at any one moment. Even yet, if we try to create an instance again, the newly created instance refers to the previous one. Any modification we make to the class through any instance impacts the variables in that specific instance as well. It’s commonly used to manage access while working with database connections and socket programming.<br>
+
+The following is used to make Singleton Class:<br>
+
+Make a function Object() { [native code] } that is only available to you.<br>
+Create a static function that returns the singleton class’s object (using lazy initialization).<br><br>
+
+7. Inner Class<br>
+We can define a class within a class in Java, and these classes are referred to as nested classes. It’s used to logically arrange classes and achieve encapsulation. The outer class members (including private) can be accessed by the inner class. <br>
+
+There are 4 types of inner classes:<br>
+
+Nested Inner class<br>
+Anonymous inner classes<br>
+Static nested classes<br>
+Method Local inner classes<br><br>
+A. Nested Inner Class:<br>
+
+It has access to an outer class’s private instance variables. The access modifiers private, protected, public, and default can be applied to any instance variable.<br><br>
+
+B. Anonymous Inner Class:<br>
+
+Basically, these classes are declared without any name.<br><br>
+
+C. Static Nested Class:<br>
+
+These classes are like static members of the outer class.<br><br>
+
+D. Method Local inner Class:<br>
+
+An inner class can be declared within a method of an outer class.<br><br><br>
+
+<iframe width="942" height="530" src="https://www.youtube.com/embed/3sMxJxeUOLg" title="#4.1 Java Tutorial | Class and Object" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    </p> 
+        
+    <br>
+    <hr>
+
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous ">
+            <a href="java-course-inner7.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="java-course-inner9.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

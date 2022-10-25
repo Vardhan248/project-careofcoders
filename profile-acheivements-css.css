@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.achievements_wrapper{
+    margin-top: 45%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+   /*overflow:hidden*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+section .container{
+    position: relative;
+    width: 800px;
+    height: 850px;
+    background: linear-gradient(to right bottom,#10192c,#0e1525);
+    border-radius: 12px;
+    border: 1px solid rgba(5, 76, 85, 0.932);
+    border-right: 1px solid rgba(13, 23, 58);
+    border-bottom:1px solid rgba(13, 23, 58);
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+    backdrop-filter: blur(250px);
+    overflow: hidden;
+    display: flex;
+    padding: 0;
+
+}
+
+section .profile{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    background: #0e1525;
+    backdrop-filter: blur(40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.profile .header .imgbox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.profile .header .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile .header h2{
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.profile .header p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 210%;
+}
+
+.profile ul li{
+    list-style: none;
+    margin: 15px;
+    display: flex;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.profile ul li .icon img{
+    width: 30px;
+}
+
+.profile ul li .title{
+    color: #fff;
+    font-weight: 600;
+    padding: 0 15px;
+    letter-spacing: 1px;
+    transition: 0.1s ease-in-out;
+}
+.profile ul li .title:hover{
+    color: #16dad0;
+}
+
+.profile ul li #title_active{
+    color: #16dad0 ;
+}
+section .info{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    padding: 10px 30px;
+    background: #0e1525;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*justify-content: flex-start;*/
+    align-items: flex-start;
+}
+
+.info .main{
+    width: 100%;
+    position: relative;
+    transform: translateY(-10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.info .main h3{
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
+
+.info .main .searchbox{
+    position: relative;
+    margin-top: 4px;
+    width: calc(100% - 40px);
+    height: 40px;
+    border-radius: 5px;
+    background: #080d16;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px rgb(3, 3, 3);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.info .main .searchbox input{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px 0 10px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    outline: none;
+    color:#fff;
+}
+
+.info .main .searchbox input::placeholder{
+    color: rgb(247, 240, 240);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.info .main .searchbox .img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: url(./images/search-icon-prof.png)rgba(214,0,100,1);
+    background-repeat: no-repeat;
+    background-size: 29px;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+
+.info .row{
+    position: relative;
+    width: calc(100% - 40px);
+    min-height: 70px;
+    background:#0e1525;
+    backdrop-filter:blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(10, 10, 10);
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.row .imgbox{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color:#141f38;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.row .imgbox img{
+    width: 50px;
+}
+
+.row:nth-child(2) .imgbox img,
+.row:nth-child(3) .imgbox img{
+    width: 40px;
+}
+
+.row .textbox{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.row .textbox .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .textbox .text p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.row .textbox .text span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.row .textbox .bar{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 15px;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+.row .textbox .bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%
+}
+
+.row:nth-child(2) .textbox .bar::before{
+    width: 90%;
+    background: linear-gradient(to right,rgb(103, 116, 177),rgb(46, 46, 199));
+}
+
+.row:nth-child(3) .textbox .bar::before{
+    width: 60%;
+    background: linear-gradient(to right,rgb(31, 148, 226),rgb(212, 209, 25));
+}
+
+.row:nth-child(4) .textbox .bar::before{
+    width: 80%;
+    background: linear-gradient(to right,rgb(226, 36, 36),rgb(46, 46, 199));
+}
+.row:nth-child(5) .textbox .bar::before{
+    width: 70%;
+    background: linear-gradient(to right,rgb(114, 5, 204),rgb(162, 134, 167));
+}
+.row:nth-child(6) .textbox .bar::before{
+    width: 40%;
+    background: linear-gradient(to right,rgb(0, 17, 255),rgb(117, 117, 173));
+}
+
+.row .textbox button{
+    height: 20px;
+    width: 40px;
+}

@@ -1,0 +1,30 @@
+.answers_container{
+    background-color: var(--bg-dark-blue);
+    height: auto;
+}
+.answers_container .card{
+    background-color: var(--secondary-color);
+    border-radius: 14px;
+    box-shadow: 2px 2px 5px 1px rgba(4, 5, 36, 0.377);
+    
+}
+.answers_wrapper{
+margin-top: 10%;
+}
+.answers_container .card h4{
+    color: #fff;
+    font-size: 25px;
+}
+.answers_container .card h6{
+    color: rgba(212, 211, 211, 0.863);
+    letter-spacing:1px;
+    font-size: 17px;
+    text-transform: none;
+}
+.answers_container .card span{
+    color: var(--primary-color);
+}
+
+.answers_container .card #question{
+    margin-bottom: 2.5vh;
+}

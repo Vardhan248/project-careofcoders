@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Java course Inner 2</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle">  <LET'S CRACK IT > </span>
+                    <h2>JAVA</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Control statements</h3>
+    <p>
+        Java compiler executes the code from top to bottom. The statements in the code are executed according to the order in which they appear. However, Java provides statements that can be used to control the flow of Java code. Such statements are called control flow statements. It is one of the fundamental features of Java, which provides a smooth flow of program. <br>
+        Java provides three types of control flow statements.<br><br>
+        •	Decision Making statements<br>
+        ‣	if statements<br>
+        ‣	switch statement<br><br>
+        •	Loop statements<br>
+        ‣	do while loop <br> 
+        ‣	while loop<br>
+        ‣	for loop<br>
+        ‣	for-each loop<br><br>
+        •	Jump statements<br>
+        ‣	break statement<br>
+        ‣	continue statement<br><br>
+        Decision-Making statements:<br> 
+        As the name suggests, decision-making statements decide which statement to execute and when. Decision-making statements evaluate the Boolean expression and control the program flow depending upon the result of the condition provided. There are two types of decision-making statements in Java, i.e., If statement and switch statement.<br>
+        1) If Statement:<br>
+        In Java, the "if" statement is used to evaluate a condition. The control of the program is diverted depending upon the specific condition. The condition of the If statement gives a Boolean value, either true or false. In Java, there are four types of if-statements given below.<br>
+        Simple if statement<br>
+        if-else statement<br>
+        if-else-if ladder<br>
+        Nested if-statement<br><br>
+        Let's understand the if-statements one by one.<br><br>
+        1) Simple if statement:<br>
+        It is the most basic statement among all control flow statements in Java. It evaluates a Boolean expression and enables the program to enter a block of code if the expression evaluates to true.<br>
+        Syntax of if statement is given below.<br><br>
+        if(condition) {    <br>
+        statement 1; //executes when condition is true  <br> 
+        }    <br>
+        2) if-else statement<br>
+        The if-else statement is an extension to the if-statement, which uses another block of code, i.e., else block. The else block is executed if the condition of the if-block is evaluated as false.<br><br>
+        Syntax:<br>
+        if(condition) {    <br>
+        statement 1; //executes when condition is true<br>   
+        }  <br>
+        else{<br>
+        statement 2; //executes when condition is false <br>  
+        }  <br><br>
+        3) if-else-if ladder:<br>
+        The if-else-if statement contains the if-statement followed by multiple else-if statements. In other words, we can say that it is the chain of if-else statements that create a decision tree where the program may enter in the block of code where the condition is true. We can also define an else statement at the end of the chain.<br><br>
+        Syntax of if-else-if statement is given below.<br>
+        if(condition 1) {    <br>
+        statement 1; //executes when condition 1 is true   <br>
+        }  <br>
+        else if(condition 2) {  <br>
+        statement 2; //executes when condition 2 is true   <br>
+        }  <br>
+        else { <br> 
+        statement 2; //executes when all the conditions are false <br>  
+        }  <br><br>
+        4. Nested if-statement<br>
+        In nested if-statements, the if statement can contain a if or if-else statement inside another if or else-if statement.<br><br>
+        Syntax of Nested if-statement is given below.<br>
+        if(condition 1) {    <br>
+        statement 1; //executes when condition 1 is true   <br>
+        if(condition 2) {  <br>
+        statement 2; //executes when condition 2 is true   <br>
+        }  <br>
+        else{<br>
+        statement 2; //executes when condition 2 is false  <br> 
+        }  <br>
+        }  <br><br><br>
+        Switch Statement:<br>
+        In Java, Switch statements are similar to if-else-if statements. The switch statement contains multiple blocks of code called cases and a single case is executed based on the variable which is being switched. The switch statement is easier to use instead of if-else-if statements. It also enhances the readability of the program.<br>
+        Points to be noted about switch statement:<br>
+        The case variables can be int, short, byte, char, or enumeration. String type is also supported since version 7 of Java
+        Cases cannot be duplicate<br>
+        Default statement is executed when any of the case doesn't match the value of expression. It is optional.
+        Break statement terminates the switch block when the condition is satisfied.<br>
+        It is optional, if not used, next case is executed.<br>
+        While using switch statements, we must notice that the case expression will be of the same type as the variable. However, it will also be a constant value.<br>
+        The syntax to use the switch statement is given below.<br><br>
+        switch (expression){<br>
+            case value1:  <br>
+             statement1;  <br>
+             break;  <br>
+            .  <br>
+            .  <br>
+            .  <br>
+            case valueN:<br>  
+        statementN;  <br>
+             break;  <br>
+            default:  <br>
+             default statement;  <br>
+        }  <br><br>
+        While using switch statements, we must notice that the case expression will be of the same type as the variable. However, it will also be a constant value. The switch permits only int, string, and Enum type variables to be used.<br><br>
+        Loop Statements<br>
+        In programming, sometimes we need to execute the block of code repeatedly while some condition evaluates to true. However, loop statements are used to execute the set of instructions in a repeated order. The execution of the set of instructions depends upon a particular condition.<br>
+        In Java, we have three types of loops that execute similarly. However, there are differences in their syntax and condition checking time.<br>
+        for loop<br>
+        while loop<br>
+        do-while loop<br><br>
+        Let's understand the loop statements one by one.<br>
+        Java for loop<br>
+        In Java, for loop is similar to C and C++. It enables us to initialize the loop variable, check the condition, and increment/decrement in a single line of code. We use the for loop only when we exactly know the number of times, we want to execute the block of code.<br>
+        for(initialization, condition, increment/decrement) {    <br>
+        //block of statements    <br>
+        }    <br>
+        Java for-each loop<br>
+        Java provides an enhanced for loop to traverse the data structures like array or collection. In the for-each loop, we don't need to update the loop variable. The syntax to use the for-each loop in java is given below.<br>
+        for(data_type var : array_name/collection_name){    <br>
+        //statements    <br>
+        }    <br><br>
+        Java while loop<br>
+        The while loop is also used to iterate over the number of statements multiple times. However, if we don't know the number of iterations in advance, it is recommended to use a while loop. Unlike for loop, the initialization and increment/decrement doesn't take place inside the loop statement in while loop.<br>
+        It is also known as the entry-controlled loop since the condition is checked at the start of the loop. If the condition is true, then the loop body will be executed; otherwise, the statements after the loop will be executed.<br>
+        The syntax of the while loop is given below.<br>
+        while(condition){<br>
+        //looping statements <br>   
+        }   <br>
+        Java do-while loop<br>
+        The do-while loop checks the condition at the end of the loop after executing the loop statements. When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop.<br>
+        <br>
+        It is also known as the exit-controlled loop since the condition is not checked in advance. The syntax of the do-while loop is given below.<br>
+        do     <br>
+        {    <br>
+        //statements<br>    
+        } while (condition);<br>  
+        Jump Statements<br>
+        Jump statements are used to transfer the control of the program to the specific statements. In other words, jump statements transfer the execution control to the other part of the program. There are two types of jump statements in Java, i.e., break and continue.<br>
+        Java break statement<br>
+        As the name suggests, the break statement is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement. However, it breaks only the inner loop in the case of the nested loop.<br>
+        The break statement cannot be used independently in the Java program, i.e., it can only be written inside the loop or switch statement.<br>
+        Java continue statement<br>
+        Unlike break statement, the continue statement doesn't break the loop, whereas, it skips the specific part of the loop and jumps to the next iteration of the loop immediately.<br><br>
+        
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/-oi9Pg0128M" title="Java Tutorial # 6 | Control Statements in Java - Part 1 | JAVA9S.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Operators</h3>
+    <p> 
+        •	Operand: These are the variables which contains the data to be processed. Example: a,b,c,x,count etc. <br>
+        •	Operator: These are symbols which tell what operation has to be performed. Types of operators:<br><br>
+        Arithmetic Operators: These operators are used to perform the arithmetic operations on 2 variables or numbers. Types of arithmetic operators:<br>
+            ‘+’ – used to perform addition.<br>
+            Syntax: a+b;<br>
+            ‘-’ – used to perform subtraction.<br>
+            Syntax: a-b;<br>
+            ‘*’ – used to perform multiplication.<br>
+            Syntax: a*b;<br>
+            ‘/’ – used to perform division.<br>
+            Syntax: a/b;<br>
+            ‘%’ – used to perform modulus.<br>
+            Syntax: a%b;<br>
+            ‘++’ – used to perform preincreament or postincreament.<br>
+            Syntax: ++a;<br>
+            ‘--’ – used to perform predecreament or postdecreament.<br>
+            Syntax: --b;<br><br>
+        Relational Operators: These operators are used to check the relation between two variables or numbers. Types of relational operators:<br>
+        ‘==’ – It checks the value of 2 operands, if both are equal, then it returns true else false.<br>
+        Syntax: a==b;<br>
+        ‘!=’ – It checks the value of 2 operands, if both are not equal, then it returns true else false.<br>
+        Syntax: a!=b;<br>
+        ‘>’ – It checks the value of 2 operands, if the left side operand is greater than right side operand, then it returns true else false.<br>
+        Syntax: a>b;<br>
+        ‘>=’ – It checks the value of 2 operands, if both are left side operand is greater than or equal to right side operand, then it returns true else false.<br>
+            Syntax: a>=b;<br>
+        ‘<’ – It checks the value of 2 operands, if both are left side operand is less than right side operand, then it returns true else false.<br>
+        Syntax: a < b;<br>
+        ‘<=’ – It checks the value of 2 operands, if both are left side operand is less than or equal to right side operand, then it returns true else false.<br>
+        Syntax: a< = b;<br><br>
+        Bitwise Operators: These operators are used to perform the specified operations on every bit of a number. Types of bitwise operators:<br>
+        ‘&’ – It gives true if both operands are true otherwise gives false.<br>
+        Syntax: a&b; <br>
+        ‘|’ – It gives true if any one operands is true otherwise gives false.<br>
+        Syntax: a|b;<br>
+        ‘^’ – It gives true if both operands are different otherwise gives false.<br>
+        Syntax: a^b;<br>
+        ‘~’ – It gives the result as an opposite bit.<br>
+        Syntax: ~a;<br>
+        ‘<<’ – It makes the left operand’s value move left by number of	 bits specified by the right operand.<br>
+        Syntax: a<<2;<br>
+        ‘>>’ – It makes the left operand’s value move right by number of bits specified by the right operand.<br>
+        Syntax: a>>2;<br><br>
+        Logical Operators: These operators are used to check whether an expression is true or false. Types of logical operators:<br>
+        ‘&&’ – It gives true if both expressions are true otherwise gives false.<br>
+        Syntax: exp1 && exp2;<br>
+        ‘||’ – It gives true if any one expression is true otherwise gives false.<br>
+        Syntax: exp1 || exp2;<br>
+        ‘!’ – It gives true if result false and gives false if the result is true.<br>
+        Syntax: !(exp);<br><br>
+        Assignment Operators: These operators are used to perform the arithmetic operations on 2 variables or numbers and assign the value to the left operand. Types of assignment operators:<br>
+            ‘+=’ – used to perform addition and assign result to left operand.<br>
+            Syntax: a+=b;<br>
+        ‘-=’ – used to perform subtraction and assign result to left operand.<br>
+        Syntax: a-=b;<br>
+        ‘*=’ – used to perform multiplication and assign result to left operand.<br>
+        Syntax: a*=b;<br>
+            ‘/=’ – used to perform division and assign result to left operand.<br>
+        Syntax: a/=b;<br>
+                     ‘%=’– used to perform modulus and assign result to left operand.<br>
+            Syntax: a%=b;<br><br>
+        Conditional Operators: These operators are used to perform any one task based on the condition , if the condition is true then exp1 will be performed else exp2 will be performed.<br><br>
+        
+
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/pnn2VTSr1Ko" title="Java Tutorial: Operators, Types of Operators & Expressions in Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <hr>
+
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="java-course-inner1.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="java-course-inner3.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Java course Inner 12</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>JAVA</h2>
+                </div>
+            </div>
+
+            <div class="actual-content">
+                <h3>Multithreading</h3>
+                <p>
+                   
+                    In Java, Multithreading refers to a process of executing two or more threads simultaneously for maximum utilization of the CPU. A thread in Java is a lightweight process requiring fewer resources to create and share the process resources. <br><br>
+                    Multithreading and Multiprocessing are used for multitasking in Java, but we prefer multithreading over multiprocessing. This is because the threads use a shared memory area which helps to save memory, and also, the content-switching between the threads is a bit faster than the process. <br><br>
+
+                    Life Cycle of a Thread : <br>
+                    There are five states a thread has to go through in its life cycle. This life cycle is controlled by JVM (Java Virtual Machine). These states are:<br><br>
+                    
+                    New<br>
+                    Runnable<br>
+                    Running<br>
+                    Non-Runnable (Blocked)<br>
+                    Terminated<br><br>
+
+
+                    1. New <br>
+
+                    In this state, a new thread begins its life cycle. This is also called a born thread. The thread is in the new state if you create an instance of Thread class but before the invocation of the start() method.<br><br>
+                    
+                    2. Runnable<br>
+                    
+                    A thread becomes runnable after a newly born thread is started. In this state, a thread would be executing its task.<br><br>
+                    
+                    3. Running<br>
+                    
+                    When the thread scheduler selects the thread then, that thread would be in a running state.<br><br>
+                    
+                    4. Non-Runnable (Blocked)<br>
+                    
+                    The thread is still alive in this state, but currently, it is not eligible to run.<br><br>
+                    
+                    5. Terminated<br>
+                    
+                    A thread is terminated due to the following reasons:<br><br>
+                    
+                    • Either its run() method exists normally, i.e., the thread’s code has executed the program. <br>
+                    • Or due to some unusual errors like segmentation fault or an unhandled exception. <br><br>
+                    A thread that is in a terminated state does not consume ant cycle of the CPU. <br><br>
+
+
+                    Java Thread Methods <br>
+                    These are the methods that are available in the Thread class:<br><br>
+                    
+                    1. public void start()<br>
+                    
+                    It starts the execution of the thread and then calls the run() on this Thread object.<br><br>
+
+                    2. public void run() <br>
+
+                    This thread is used to do an action for a thread. The run() method is instantiated if the thread was constructed using a separate Runnable object. <br><br>
+
+                    3. public static void sleep() <br>
+
+                    This blocks the currently running thread for the specified amount of time. <br><br>
+
+                    4. public static Thread currentThread() <br>
+
+                    It returns a reference to the currently running thread. <br><br>
+
+                    5. public void join() <br>
+
+                    It causes the current thread to block until the second thread terminates or the specified amount of milliseconds passes. <br><br>
+
+                    6. public final int getPriority() <br>
+
+                    It is used to check the priority of the thread. When a thread is created, some priority is assigned to it. This priority is assigned either by the JVM or by the programmer explicitly while creating the thread. <br><br>
+
+                    7. public final void setPriority() <br>
+
+                    This method is used to change the priority of the thread. The priority of every thread is represented by the integer number from 1 to 10. The default priority of a thread is 5. <br><br>
+
+                    And many more....... <br><br>
+
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/2HN__CDik_s" title="Threads In Java | What Is Multithreading In Java? | Java Multithreading Tutorial | Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </p>
+            
+                <br>
+                <hr>
+                <br>
+            
+            
+                <h3>Synchronization</h3>
+                <p> 
+                    Synchronization in Java <br>
+                    Synchronization in Java is the capability to control the access of multiple threads to any shared resource.<br>
+                    
+                    Java Synchronization is better option where we want to allow only one thread to access the shared resource.<br><br>                    
+                    Why use Synchronization?<br>
+                    The synchronization is mainly used to<br>
+                    
+                    To prevent thread interference. <br>
+                    To prevent consistency problem. <br><br>
+                    Types of Synchronization <br>
+                    There are two types of synchronization <br>  
+                
+                    Process Synchronization<br>
+Thread Synchronization<br>
+Here, we will discuss only thread synchronization.<br><br>
+
+Thread Synchronization<br>
+There are two types of thread synchronization mutual exclusive and inter-thread communication.<br><br>
+
+Mutual Exclusive<br>
+Synchronized method.<br>
+Synchronized block.<br><br>
+Static synchronization.<br>
+Cooperation (Inter-thread communication in java)<br><br>
+Mutual Exclusive<br>
+Mutual Exclusive helps keep threads from interfering with one another while sharing data. It can be achieved by using the following three ways:<br>
+
+By Using Synchronized Method<br>
+By Using Synchronized Block<br>
+By Using Static Synchronization<br><br>
+Concept of Lock in Java<br>
+Synchronization is built around an internal entity known as the lock or monitor. Every object has a lock associated with it. By convention, a thread that needs consistent access to an object's fields has to acquire the object's lock before accessing them, and then release the lock when it's done with them.<br>
+
+From Java 5 the package java.util.concurrent.locks contains several lock implementations.<br><br>
+
+Java Synchronized Method<br>
+If you declare any method as synchronized, it is known as synchronized method.<br>
+
+Synchronized method is used to lock an object for any shared resource.<br>
+
+When a thread invokes a synchronized method, it automatically acquires the lock for that object and releases it when the thread completes its task.<br><br><br>
+
+<iframe width="941" height="530" src="https://www.youtube.com/embed/IIgHG_YHXPE" title="Synchronization | GeeksforGeeks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </p> 
+                    
+                <br>
+                <hr>
+            
+            
+                
+            </div>
+
+    <div class="pagination-div">
+        <div class="previous ">
+            <a href="java-course-inner11.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="java-course-inner13.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Java course Inner 6</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>JAVA</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Maps</h3>
+
+
+    <p>
+        The map interface is present in java.util package represents a mapping between a key and a value. The Map interface is not a subtype of the Collection interface. Therefore it behaves a bit differently from the rest of the collection types. A map contains unique keys.<br><br>
+        Maps are perfect to use for key-value association mapping such as dictionaries. The maps are used to perform lookups by keys or when someone wants to retrieve and update elements by keys. Some common scenarios are as follows: <br>
+
+A map of error codes and their descriptions.<br>
+A map of zip codes and cities.<br>
+A map of managers and employees. Each manager (key) is associated with a list of employees (value) he manages.<br>
+A map of classes and students. Each class (key) is associated with a list of students (value).<br><br>
+
+Creating Map Objects<br>
+Since Map is an interface, objects cannot be created of the type map. We always need a class that extends this map in order to create an object. And also, after the introduction of Generics in Java 1.5, it is possible to restrict the type of object that can be stored in the Map. <br>
+
+Syntax: Defining Type-safe Map<br>
+
+Map hm = new HashMap(); <br>
+// Obj is the type of the object to be stored in Map<br><br>
+Characteristics of a Map Interface<br>
+A Map cannot contain duplicate keys and each key can map to at most one value. Some implementations allow null key and null values like the HashMap and LinkedHashMap, but some do not like the TreeMap.<br>
+The order of a map depends on the specific implementations. For example, TreeMap and LinkedHashMap have predictable orders, while HashMap does not.<br>
+There are two interfaces for implementing Map in java. They are Map and SortedMap, and three classes: HashMap, TreeMap, and LinkedHashMap.<br><br>
+
+Classes that implement the Map interface are<br>
+
+Class 1: HashMap <br>
+HashMap is a part of Java’s collection since Java 1.2. It provides the basic implementation of the Map interface of Java. It stores the data in (Key, Value) pairs. To access a value one must know its key. This class uses a technique called Hashing. Hashing is a technique of converting a large String to a small String that represents the same String. A shorter value helps in indexing and faster searches. Let’s see how to create a map object using this class.<br><br>
+
+Class 2: LinkedHashMap<br>
+LinkedHashMap is just like HashMap with an additional feature of maintaining an order of elements inserted into it. HashMap provided the advantage of quick insertion, search, and deletion but it never maintained the track and order of insertion which the LinkedHashMap provides where the elements can be accessed in their insertion order. Let’s see how to create a map object using this class.<br><br>
+
+Class 3: TreeMap<br>
+The TreeMap in Java is used to implement the Map interface and NavigableMap along with the Abstract Class. The map is sorted according to the natural ordering of its keys, or by a Comparator provided at map creation time, depending on which constructor is used. This proves to be an efficient way of sorting and storing the key-value pairs. The storing order maintained by the treemap must be consistent with equals just like any other sorted map, irrespective of the explicit comparators. Let’s see how to create a map object using this class.<br><br>
+
+Performing Various Operations using Map Interface and HashMap Class<br>
+Since Map is an interface, it can be used only with a class that implements this interface. Now, let’s see how to perform a few frequently used operations on a Map using the widely used HashMap class. And also, after the introduction of Generics in Java 1.5, it is possible to restrict the type of object that can be stored in the map. <br><br>
+
+Operation 1: Adding Elements<br>
+
+In order to add an element to the map, we can use the put() method. However, the insertion order is not retained in the hashmap. Internally, for every element, a separate hash is generated and the elements are indexed based on this hash to make it more efficient.<br>
+
+Operation 2: Changing Element<br>
+
+After adding the elements if we wish to change the element, it can be done by again adding the element with the put() method. Since the elements in the map are indexed using the keys, the value of the key can be changed by simply inserting the updated value for the key for which we wish to change. <br><br>
+
+Operation 3: Removing Elements<br>
+
+In order to remove an element from the Map, we can use the remove() method. This method takes the key value and removes the mapping for a key from this map if it is present in the map.<br><br>
+
+Operation 4: Iterating through the Map<br>
+
+There are multiple ways to iterate through the Map. The most famous way is to use a for-each loop and get the keys. The value of the key is found by using the getValue() method.<br><br><br>
+
+<iframe width="942" height="530" src="https://www.youtube.com/embed/jErVacMSkJg" title="Java Map and HashMap Tutorial (Java Collections) | Key-Value Pair Entry #10.3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    </p>
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>classes</h3>
+    <p> 
+        The set is an interface available in the java.util package. The set interface extends the Collection interface. An unordered collection or list in which duplicates are not allowed is referred to as a collection interface. The set interface is used to create the mathematical set. The set interface use collection interface's methods to avoid the insertion of the same elements. SortedSet and NavigableSet are two interfaces that extend the set implementation. <br><br>
+
+        Operations on the Set Interface<br>
+On the Set, we can perform all the basic mathematical operations like intersection, union and difference.<br>
+
+Intersection: The intersection operation returns all those elements which are present in both the set. The intersection of set1 and set2 will be [33, 45, 55].<br><br>
+Union: The union operation returns all the elements of set1 and set2 in a single set, and that set can either be set1 or set2. The union of set1 and set2 will be [2, 3, 12, 22, 33, 34, 45, 55, 66, 77, 83].<br><br>
+Difference: The difference operation deletes the values from the set which are present in another set. The difference of the set1 and set2 will be [66, 34, 22, 77].<br><br>
+In set, addAll() method is used to perform the union, retainAll() method is used to perform the intersection and removeAll() method is used to perform difference<br><br>
+
+For performing the union, we create a new set union_data with the same element of the set1. We then call the addAll() method of set and pass the set2 as an argument to it. This method will add all those elements to the union_data which are not present in it and gives the union of both sets.<br>
+
+For performing the intersection, we create a new set intersection_data with the same element of the set1. We then call the retainAll() method of set and pass the set2 as an argument to it. This method will get all those elements from the intersection_data which are present in set2 and store it in the intersection_data. Now, the intersection_data contains the intersect value of both the sets.<br>
+
+For performing the difference, we create a new set difference_data with the same element of the set1. We then call the removeAll() method of set and pass the set2 as an argument to it. This method will remove all those elements from the difference_data which are present in the set2 and gives the difference of both the sets.<br><br>
+
+Set Methods<br>
+There are several methods available in the set interface which we can use to perform a certain operation on our sets. These methods are as follows:<br>
+
+1) add()<br>
+The add() method insert a new value to the set. The method returns true and false depending on the presence of the insertion element. It returns false if the element is already present in the set and returns true if it is not present in the set.<br><br>
+
+2) addAll()<br>
+The addAll() method appends all the elements of the specified collection to the set.<br><br>
+
+3) clear()<br>
+The method removes all the elements from the set. It doesn't delete the reference of the set. It only deletes the elements of the set.<br><br>
+
+4) contains()<br>
+The contains() method is used to know the presence of an element in the set. Its return value is true or false depending on the presence of the element.<br><br>
+
+5) containsAll()<br>
+The method is used to check whether all the elements of the collection are available in the existing set or not. It returns true if all the elements of the collection are present in the set and returns false even if one of the elements is missing in the existing set.<br><br>
+
+6) hashCode()<br>
+The method is used to derive the hash code value for the current instance of the set. It returns hash code value of integer type.<br><br>
+
+7) isEmpty()<br>
+The isEmpty() method is used to identify the emptiness of the set . It returns true if the set is empty and returns false if the set is not empty.<br><br>
+
+8) iterator()<br>
+The iterator() method is used to find the iterator of the set. The iterator is used to get the element one by one.<br><br>
+
+9) remove()<br>
+The method is used to remove a specified element from the Set. Its return value depends on the availability of the element. It returns true if the element is available in the set and returns false if it is unavailable in the set.<br><br>
+
+10) removeAll()<br>
+The method removes all the elements of the existing set from the specified collection.<br><br>
+
+11) retainAll()<br>
+The method retains all the elements from the set specified in the given collection.<br><br>
+
+12) size()<br>
+The method returns the size of the set.<br>
+
+13) removeAll()<br>
+The method is used to create an array with the same elements of the set.<br><br><br>
+
+
+<iframe width="942" height="530" src="https://www.youtube.com/embed/Gvy1uwGoD2U" title="Java Essentials - Sets in java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    </p> 
+        
+    <br>
+    <hr>
+
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous ">
+            <a href="java-course-inner10.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="java-course-inner12.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

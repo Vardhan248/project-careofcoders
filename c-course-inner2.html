@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>C course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C LANGUAGE</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Definition and scope</h3>
+    <p> 
+        A scope in any programming is a region of the program where a defined variable can have its existence and beyond that variable it cannot be accessed. There are three places where variables can be declared in C programming language − <br>
+•	Inside a function or a block which is called local variables.<br>
+•	Outside of all functions which is called global variables.<br>
+•	In the definition of function parameters which are called formal parameters.<br><br>
+                                   Local Variables<br>
+Variables that are declared inside a function or block are called local variables. They can be used only by statements that are inside that function or block of code. Local variables are not known to functions outside their own. <br><br>
+    		          Global Variables<br>
+Global variables are defined outside a function, usually on top of the program. Global variables hold their values throughout the lifetime of your program and they can be accessed inside any of the functions defined for the program.<br>
+A global variable can be accessed by any function. That is, a global variable is available for use throughout your entire program after its declaration.<br>
+          Global Variables<br>
+Global variables are defined outside a function, usually on top of the program. Global variables hold their values throughout the lifetime of your program and they can be accessed inside any of the functions defined for the program.<br>
+A global variable can be accessed by any function. That is, a global variable is available for use throughout your entire program after its declaration.<br><br>
+
+<iframe width="942" height="530" src="https://www.youtube.com/embed/elMQ5YtZPxA" title="Scope of Variables - Local vs Global" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Data types</h3>
+    <p> 
+        A data type in C refers to the type of data used to store the information. For example, the name of a person would be an array of characters, while the age will be in integers. Whereas, the marks of a student would require a data type that can store decimal values. <br><br>
+
+
+Basic Data Types<br>
+In C language, basic data types are used to store values in integer and decimal forms. It supports both signed and unsigned literals. There are four basic data types, in both signed and unsigned forms:<br>
+
+Int<br>
+Float<br>
+Double<br>
+Char<br><br>
+
+
+1. Integer Data Type<br>
+An integer type variable can store zero, positive, and negative values without any decimal. In C language, the integer data type is represented by the ‘int’ keyword, and it can be both signed or unsigned. By default, the value assigned to an integer variable is considered positive if it is unsigned.<br>
+
+The integer data type is further divided into short, int, and long data types. The short data type takes 2 bytes of storage space; int takes 2 or 4 bytes, and long takes 8 bytes in 64-bit and 4 bytes in the 32-bit operating system.<br><br>
+
+2. Float-pointing Data Types<br>
+The floating-point data type allows a user to store decimal values in a variable. It is of two types:<br>
+
+Float<br>
+Double<br>
+Float<br>
+
+Float variables store decimal values with up to 6 digits after the decimal place. The storage size of the float variable is 4 bytes, but the size may vary for different processors, the same as the ‘int’ data type.<br><br>
+
+
+Double<br>
+The double data type is similar to float, but here, you can have up to 10 digits after the decimal place. It is represented by the ‘double’ keyword and is mainly used in scientific programs where extreme precision is required.<br><br>
+
+
+
+
+3. Char<br>
+Char is used to storing single character values, including numerical values. If you create an array of the character data type, it becomes a string that can store values such as name, subject, and more.<br><br>
+
+
+
+
+Derived Data Types<br>
+The primitive or basic data types are used to store single values of different forms, but what if you need to store more values of the same data type? Here, derived data types allow you to combine the basic data types and store multiple values in a single variable.<br>
+
+Derived data types are defined by the user itself, which means that you can aggregate as many elements of similar data types as required. There are four types of derived data types:<br>
+
+Array<br>
+Pointer<br>
+Structure<br>
+Union<br><br>
+
+
+
+
+1. Array<br>
+An array is a collection of similar data-type elements stored in a contiguous memory location. For example, you can store float values like the marks of a student, integer values like the roll number, and so on.<br><br>
+
+
+
+2. Pointer<br>
+Pointer is a variable used to store the address of another variable. To store the address of a variable, the pointer variable should be of the same data type.<br><br>
+
+
+3. Structure<br>
+In C language, a structure is a user-defined data type, which is a group of items used to store the values of similar or different data types. For example, structures can be used to store information about a student, including the name, the roll number, marks, and more. The record of each student will be represented by an object of the structure.<br><br>
+
+
+4. Union<br>
+Union is also a collection of elements with similar or different data types, but the memory location is the same for all the elements. It is a special kind of data type in C language, where you can declare many variables, but only one variable can store the value at a given time.<br><br>
+
+
+Enumeration Data Type<br>
+Enumeration is a user-defined data type used to assign names to the integral constants and enhance the readability of your program. The keyword used for enumeration is ‘enum’ with a syntax similar to structure:<br>
+
+enum flag{const1, const2, const3……...};<br>
+There are two main reasons why enumerations are better than ‘#define’:<br>
+
+Enum constants get default values by the compiler<br>
+They can be declared in the local scope<br><br>
+
+
+
+Void Data Type<br>
+Void is a data type in C language that does not refer to any value of any type. It is mostly used as the return type in functions. You can declare the void pointers to take the address of variables from any data type. These pointers are often called ‘generic pointers.’<br><br><br>
+
+<iframe width="942" height="530" src="https://www.youtube.com/embed/wnbzTjWr5gY" title="DataTypes In C | What Are DataTypes In C and Their Types | C Programming for Beginners | Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="c-course-inner1.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="c-course-inner3.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Cpp course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="/images/Favicon.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C++ LANGUAGE</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>OPERATOR OVERLOADING:</h3>
+    <p> 
+        C++ Operators Overloading<br>
+        Operator overloading is a compile-time polymorphism in which the operator is overloaded to provide the special meaning to the user-defined data type. Operator overloading is used to overload or redefines most of the operators available in C++. It is used to perform the operation on the user-defined data type. For example, C++ provides the ability to add the variables of the user-defined data type that is applied to the built-in data types.<br><br>
+        The advantage of Operators overloading is to perform different operations on the same operand.<br><br>
+        Operator that cannot be overloaded are as follows:<br>
+        o	Scope operator (::)<br>
+        o	Sizeof<br>
+        o	member selector(.)<br>
+        o	member pointer selector(*)<br>
+        o	ternary operator(?:)<br><br>
+        Syntax of Operator Overloading<br>
+        1.	return_type class_name  : : operator op(argument_list)  <br>
+        2.	{  <br>
+        3.	     // body of the function.  <br>
+        4.	}  <br>
+        Where the return type is the type of value returned by the function.<br>
+        class_name is the name of the class.<br>
+        operator op is an operator function where op is the operator being overloaded, and the operator is the keyword.<br><br>
+        Rules for Operator Overloading<br>
+        o	Existing operators can only be overloaded, but the new operators cannot be overloaded.<br>
+        o	The overloaded operator contains atleast one operand of the user-defined data type.<br>
+        o	We cannot use friend function to overload certain operators. However, the member function can be used to overload those operators.<br>
+        o	When unary operators are overloaded through a member function take no explicit arguments, but, if they are overloaded by a friend function, takes one argument.<br>
+        o	When binary operators are overloaded through a member function takes one explicit argument, and if they are overloaded through a friend function takes two explicit arguments.
+        
+        <br> <br>
+                
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/edfATDog-LQ" title="Operator Overloading In C++ | What Is Operator Overloading In C++? | C++ Programming | Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>VIRTUAL FUNCTIONS:</h3>
+    <p> 
+        C++ virtual function<br>
+o	A C++ virtual function is a member function in the base class that you redefine in a derived class. It is declared using the virtual keyword.<br>
+o	It is used to tell the compiler to perform dynamic linkage or late binding on the function.<br>
+o	There is a necessity to use the single pointer to refer to all the objects of the different classes. So, we create the pointer to the base class that refers to all the derived objects. But, when base class pointer contains the address of the derived class object, always executes the base class function. This issue can only be resolved by using the 'virtual' function.<br>
+o	A 'virtual' is a keyword preceding the normal declaration of a function.<br>
+o	When the function is made virtual, C++ determines which function is to be invoked at the runtime based on the type of the object pointed by the base class pointer.<br>
+________________________________________<br><br>
+Late binding or Dynamic linkage<br>
+In late binding function call is resolved during runtime. Therefore compiler determines the type of object at runtime, and then binds the function call.<br>
+________________________________________<br><br>
+Rules of Virtual Function<br>
+o	Virtual functions must be members of some class.<br>
+o	Virtual functions cannot be static members.<br>
+o	They are accessed through object pointers.<br>
+o	They can be a friend of another class.<br>
+o	A virtual function must be defined in the base class, even though it is not used.<br>
+o	The prototypes of a virtual function of the base class and all the derived classes must be identical. If the two functions with the same name but different prototypes, C++ will consider them as the overloaded functions.<br>
+o	We cannot have a virtual constructor, but we can have a virtual destructor<br>
+o	Consider the situation when we don't use the virtual keyword.<br><br>
+Pure Virtual Function<br>
+o	A virtual function is not used for performing any task. It only serves as a placeholder.<br>
+o	When the function has no definition, such function is known as "do-nothing" function.<br>
+o	The "do-nothing" function is known as a pure virtual function. A pure virtual function is a function declared in the base class that has no definition relative to the base class.<br>
+o	A class containing the pure virtual function cannot be used to declare the objects of its own, such classes are known as abstract base classes.<br>
+o	The main objective of the base class is to provide the traits to the derived classes and to create the base pointer used for achieving the runtime polymorphism.<br>
+Example for a Pure Virtual Function :<br>
+virtual void display() = 0;  
+
+
+
+
+        <br><br>
+
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/SF8HbxDbNr0" title="Virtual Function in C++ -50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <br>
+    <hr>
+
+
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="cpp-course-inner5.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="cpp-course-inner7.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>

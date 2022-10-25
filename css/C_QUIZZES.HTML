@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Quizzes</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="D:\Proj\css\style.css">
+    <link rel="stylesheet" href="D:\Proj\css\responsive-style.css">
+    <link rel="stylesheet" href="Quizzes-css.css">
+    
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a> 
+ 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+<a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+  
+
+<!--quiz section-->
+<section id="quizzes">
+    <!--START C BUTTON-->
+    <div class="startbutton">
+        <button>START QUIZ</button>
+    </div>
+<!--INFO_BOX-->
+<div class="info_box">
+    <div class="info_title">
+        <span>Rules Of The Quiz</span>
+    </div>
+    <div class="info_list">
+        <div class="info">1. There Are Only <span>15 Seconds </span> To Answer A Question</div>
+        <div class="info">2. There Is Only One Chance Of Selecting A Option,No second Chance Of Reselecting Or Deselecting</div>
+        <div class="info">3. There Is No Chance To Exit From Quiz While You're Attempting</div>
+        <div class="info">4. You Can't Select A Option Once Time Is Up</div>
+        <div class="info">5. There Are No Negative Marks,Marks Will Be Alloted Based On The Correct Answers</div>
+    </div>
+    <div class="buttons">
+        <button class="exit">EXIT QUIZ</button>
+        <button class="continue">CONTINUE</button>
+    </div>
+</div>
+<!--quiz box-->
+<div class="quiz_box">
+    <header>
+        <div class="title">C/O CODERS QUIZZES</div>
+            <div class="timer">
+                <div class="time_text">
+                    Time Left
+                </div>
+                <div class="time_seconds">
+                    10
+                </div>
+            </div>
+            <div class="time_line">
+                 
+            </div>
+    </header>
+    <section>
+        <div class="qstn_text">
+            <!--<span>
+               1.What is a correct syntax to output "Hello World" in C?
+            </span>-->
+        </div>
+        <div class="option_list">
+            <!--<div class="option">
+                <span>Console.WriteLine("Hello World");</span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="option">
+                <span>cout<<"Hello World";</span>
+                <div class="icon tick"><i class="fas fa-check"></i></div>
+            </div>
+            <div class="option">
+                <span>printf("Hello World");</span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="option">
+                <spanSystem.out.println("Hello World");</span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>-->
+        </div>
+    </section>
+    <!--quiz_box_footer-->
+    <footer>
+        <div class="total_que">
+            <!--<span><p>1</p>of<p>5</p>Questions</span>-->
+        </div>
+        <button class="next_btn">
+            NEXT QUESTION
+        </button>
+    </footer>
+</div>
+  <!--result-box-->
+<div class="result_box">
+    <div class="icon">
+    <i class="fas fa-crown">
+    </i>
+   </div>
+    <div class="complete_test">
+        YOU'VE COMPLETED THE QUIZ
+    </div>
+    <div class="score_text">
+    <!-- <span>AND CONGRATULATIONS, YOU GOT <p>5</p> OUT OF <P>5</P></span>-->
+    </div>
+    <div class="buttons">
+        <button class="replay">REPLAY QUIZ</button>
+        <button class="quit">QUIT QUIZ</button>
+    </div>
+</div>
+</section>
+<script src="D:\student\quizproject\js\script.js"></script>
+<script src="D:\student\quizproject\js\questions.js"></script>
+</body>
+</html>

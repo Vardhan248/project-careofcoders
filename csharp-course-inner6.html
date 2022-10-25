@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>c sharp course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C SHARP</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Indexers</h3>
+    <p>
+        •	In a C# program, indexers allow instances of a class or struct to be indexed like arrays.<br>
+        •	Indexers are syntactically similar to properties, but unlike properties, the accessors of indexers accept one or more parameters.<br>
+        •	Indexers allow our object to be used just like an array, or we can say we can index the object using [ ] brackets just like arrays.<br>
+        •	We can say indexers are special type of properties which adds logic that how can array or list store the values.<br>
+        •	Syntax of indexer resembles to properties.<br>
+        •	We can use all access modifiers with indexers and also have return types.<br>
+        •	Indexers are the regular members of a class.<br>
+        •	Indexer is created with the help of this keyword.<br><br>
+        
+        In C# introduce new concept is Indexer. This is very useful for some situation. Let as discuss something about Indexer.<br>
+        •	Indexer Concept is object act as an array.<br>
+        •	Indexer an object to be indexed in the same way as an array.<br>
+        •	Indexer modifier can be private, public, protected or internal.<br>
+        •	Indexer modifier can be private, public, protected or internal.<br>
+        •	Indexers in C# must have at least one parameter. Else the compiler will generate a compilation error.<br><br>
+        
+        Indexers<br>
+        •	Indexers are data members that allow you to access data within objects in a way that is similar to accessing arrays.<br>
+        •	Indexers provide faster access to the data within an object as they help in indexing the data.<br>
+        •	Indexers allows you to use the index of an object to access the values within the object.<br>
+        •	Indexers are also known as smart arrays in C#.<br>
+        •	In arrays, you use the index position of an object to access its value.<br>
+        •	The implementation of indexers is similar to properties, except that the declaration of an indexer can contain parameters.<br>
+        •	Indexers allow you to index a class, struct, or an interface.<br><br>
+        An indexer can be defined by specifying the following:<br>
+        •	An access modifier, which decides the scope of the indexer.<br>
+        •	The return type of the indexer, which specifies the type of value an indexer will return.<br>
+        •	The this keyword, which refers to the current instance of the current class.<br>
+        •	The bracket notation ([]), which consists of the data type and the identifier of the index.<br>
+        •	The open and close curly braces, which contain the declaration of the set and get accessors.<br>
+        The following syntax creates an indexer.<br>
+        <access_modifier><return_type> this [<parameter>]<br>
+        { <br>
+        get { // return value } <br>
+        set { // assign value }<br>
+        }<br><br>
+        Parameters With Indexers<br>
+        •	Indexers must have at least one parameter.<br>
+        •	The parameter denotes the index position, using which the stored value at that position is set or accessed.<br>
+        •	Indexers can also have multiple parameters. Such indexers can be accessed like a multi-dimensional array.<br>
+        •	When accessing arrays, you need to mention the object name followed by the array name.<br>
+        •	The value can be accessed by specifying the index position.<br>
+        •	Indexers can be accessed directly by specifying the index number along with the instance of the class.<br><br>
+        Implementing Inheritance With Indexers<br>
+        •	Indexers can be inherited like other members of the class.<br>
+        •	It means the base class indexers can be inherited by the derived class.<br><br>
+        Implementing Polymorphism Using Indexers<br>
+        •	Indexers can implement polymorphism by overriding the base class indexers or by overloading indexers.<br>
+        •	A particular class can include more than one indexer having different signatures. This feature of polymorphism is called overloading.<br>
+        •	Thus, polymorphism allows the indexer to function with different data types of C# and generate customized output.<br><br>
+        Multiple Parameters in Indexers<br>
+        •	Indexers must be declared with at least one parameter within the square bracket notation [ ].<br>
+        •	Indexers can include multiple parameters.<br>
+        •	An indexer with multiple parameters can be accessed like a multi-dimensional array.<br>
+        •	A parameterized indexer can be used to hold a set of related values.<br><br>
+        Indexers in Interfaces<br>
+        •	Indexers can also be declared in interfaces.<br>
+        •	The accessors of indexers declared in interfaces differ from the indexers declared within a class.<br>
+        •	The set and get accessors declared within an interface do not use access modifiers and do not contain a body.<br>
+        •	An indexer declared in the interface must be implemented in the class implementing the interface.<br>
+        •	This enforces reusability and provides the flexibility to customize indexers.
+        
+
+        
+       <br><br>
+       <iframe width="941" height="530" src="https://www.youtube.com/embed/Js24GMjfQKI" title="C# - Indexer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <hr>
+    <h3>Inheritance</h3>
+    <p>
+        Inheritance is an important pillar of OOP(Object Oriented Programming). It is the mechanism in C# by which one class is allowed to inherit the features(fields and methods) of another class.<br><br>
+Important terminology:<br>
+•	Super Class: The class whose features are inherited is known as super class(or a base class or a parent class).<br><br>
+•	Sub Class: The class that inherits the other class is known as subclass(or a derived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.<br><br>
+•	Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.<br><br>
+Types of Inheritance in C#<br>
+Below are the different types of inheritance which is supported by C# in different combinations.<br>
+1.	Single Inheritance: In single inheritance, subclasses inherit the features of one superclass.<br><br>
+2.Multilevel Inheritance: In Multilevel Inheritance, a derived class will be inheriting a base class and as well as the derived class also act as the base class to other class.<br><br>
+3.Hierarchical Inheritance: In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one subclass.<br><br>
+4.Multiple Inheritance(Through Interfaces):In Multiple inheritance, one class can have more than one superclass and inherit features from all parent classes. Please note that C# does not support multiple inheritance with classes. In C#, we can achieve multiple inheritance only through Interfaces.<br><br>
+5.Hybrid Inheritance(Through Interfaces): It is a mix of two or more of the above types of inheritance. Since C# doesn’t support multiple inheritance with classes, the hybrid inheritance is also not possible with classes.<br><br>
+Important facts about inheritance in C#<br>
+•	Default Superclass: Except Object class, which has no superclass, every class has one and only one direct superclass(single inheritance). In the absence of any other explicit superclass, every class is implicitly a subclass of Object class.<br>
+•	Superclass can only be one: A superclass can have any number of subclasses. But a subclass can have only one superclass. This is because C# does not support multiple inheritance with classes. Although with interfaces, multiple inheritance is supported by C#.<br>
+•	Inheriting Constructors: A subclass inherits all the members (fields, methods) from its superclass. Constructors are not members, so they are not inherited by subclasses, but the constructor of the superclass can be invoked from the subclass.<br>
+•	Private member inheritance: A subclass does not inherit the private members of its parent class. However, if the superclass has properties(get and set methods) for accessing its private fields, then a subclass can inherit.
+
+        
+        <br>
+<br>
+<iframe width="942" height="530" src="https://www.youtube.com/embed/rVHNrs8Ymjs" title="What is Inheritance and Different Types of Inheritance in C#" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+   <hr>
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="csharp-course-inner5.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="csharp-course-inner7.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!--<div class="features">
+        <h3>Features of this course :</h3>
+        <p><i class="far fa-video"></i> Video links for each topic</p>
+        <p><i class="far fa-cloud-download"></i> downloadable articles</p>
+        <p><i class="far fa-mobile-alt"></i> Can be viewed on  phone</p>
+        <p><i class="far fa-paperclip"></i> Quizz questions</p>
+        <p><i class="fas fa-certificate"></i> Will be certified </p>
+    </div>-->

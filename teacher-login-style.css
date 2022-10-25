@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: #091020;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+}
+
+.wrapper{
+    width: 100%;
+    background: #0e1525;
+    border-radius: 5px;
+}
+
+.wrapper .title {
+    line-height: 90px;
+    background: #16dad0;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    font: size 25px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.wrapper form {
+    padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid #0e1525;
+}
+
+form .row input:focus {
+    border-color: #16dad0;
+    box-shadow: inset 0px 0px 2px 2px #16dad0;
+}
+
+.wrapper form .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #091020;
+    background: #16dad0;
+    border: 1px solid #16dad0;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form .btn input {
+    padding-left: 0px;
+    background: #16dad0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 15px;
+    color: #091020;
+    font-weight: 600;
+}
+
+.wrapper form .btn input:hover {
+    background: #091020;
+    font-size: 16px;
+    color: #16dad0;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>c sharp course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C SHARP</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Delegates</h3>
+    <p> 
+        A delegate is an object which refers to a method or you can say it is a reference type variable that can hold a reference to the methods. Delegates in C# are similar to the function pointer in C/C++. It provides a way which tells which method is to be called when an event is triggered. <br>
+        For example, if you click on a Button on a form (Windows Form application), the program would call a specific method. In simple words, it is a type that represents references to methods with a particular parameter list and return type and then calls the method in a program for execution when it is needed.<br><br>
+        Important Points About Delegates: <br>
+        •	Provides a good way to encapsulate the methods.<br>
+        •	Delegates are the library class in System namespace.<br>
+        •	These are the type-safe pointer of any method.<br>
+        •	Delegates are mainly used in implementing the call-back methods and events.<br>
+        •	Delegates can be chained together as two or more methods can be called on a single event.<br>
+        •	It doesn’t care about the class of the object that it references.<br>
+        •	Delegates can also be used in “anonymous methods” invocation.<br>
+        •	Anonymous Methods(C# 2.0) and Lambda expressions(C# 3.0) are compiled to delegate types in certain contexts. Sometimes, these features together are known as anonymous functions.<br><br>
+        Declaration of Delegates<br>
+        Delegate type can be declared using the delegate keyword. Once a delegate is declared, delegate instance will refer and call those methods whose return type and parameter-list matches with the delegate declaration.<br>
+        Syntax: <br>
+        [modifier] delegate [return_type] [delegate_name] ([parameter_list]);<br>
+        modifier: It is the required modifier which defines the access of delegate and it is optional to use.<br>
+        delegate: It is the keyword which is used to define the delegate.<br>
+        return_type: It is the type of value returned by the methods which the delegate will be going to call. It can be void. A method must have the same return type as the delegate.<br>
+        delegate_name: It is the user-defined name or identifier for the delegate.<br>
+        parameter_list: This contains the parameters which are required by the method when called through the delegate. <br>
+        Note: A delegate will call only a method which agrees with its signature and return type. A method can be a static method associated with a class or can be an instance method associated with an object, it doesn’t matter. <br><br>
+        Instantiation & Invocation of Delegates<br>
+        After declaring a delegate, a delegate object is created with the help of new keyword. Once a delegate is instantiated, a method call made to the delegate is pass by the delegate to that method. The parameters passed to the delegate by the caller are passed to the method, and the return value, if any, from the method, is returned to the caller by the delegate. This is known as invoking the delegate. <br>
+        Syntax:<br>
+        [delegate_name]  [instance_name] = new [delegate_name](calling_method_name);<br><br>
+        Multicasting of a Delegate<br>
+        Multicasting of delegate is an extension of the normal delegate(sometimes termed as Single Cast Delegate). It helps the user to point more than one method in a single call.<br><br>
+        Properties: <br>
+        •	Delegates are combined and when you call a delegate then a complete list of methods is called.<br>
+        •	All methods are called in First in First Out(FIFO) order.<br>
+        •	‘+’ or ‘+=’ Operator is used to add the methods to delegates.<br>
+        •	‘–’ or ‘-=’ Operator is used to remove the methods from the delegates list.<br><br>
+        Note: Remember, multicasting of delegate should have a return type of Void otherwise it will throw a runtime exception. Also, the multicasting of delegate will return the value only from the last method added in the multicast. Although, the other methods will be executed successfully.<br><br>
+        <iframe width="941" height="530" src="https://www.youtube.com/embed/1kmt2VrvsjA" title="C# - Delegate" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <hr>
+    <h3>Constructors</h3>
+    <p>
+        C# Constructor<br>
+In C#, constructor is a special method which is invoked automatically at the time of object creation. It is used to initialize the data members of new object generally. The constructor in C# has the same name as class or struct.<br><br>
+There can be two types of constructors in C#.<br>
+o	Default constructor<br>
+o	Parameterized constructor<br><br>
+C# Default Constructor<br>
+A constructor which has no argument is known as default constructor. It is invoked at the time of creating object.<br><br>
+C# Parameterized Constructor<br>
+A constructor which has parameters is called parameterized constructor. It is used to provide different values to distinct objects.
+
+
+        <br>
+<br>
+<iframe width="942" height="530" src="https://www.youtube.com/embed/cAhh6pYkHPQ" title="C# constructors 👷" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+   <hr>
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="csharp-course-inner2.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="csharp-course-inner4.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!--<div class="features">
+        <h3>Features of this course :</h3>
+        <p><i class="far fa-video"></i> Video links for each topic</p>
+        <p><i class="far fa-cloud-download"></i> downloadable articles</p>
+        <p><i class="far fa-mobile-alt"></i> Can be viewed on  phone</p>
+        <p><i class="far fa-paperclip"></i> Quizz questions</p>
+        <p><i class="fas fa-certificate"></i> Will be certified </p>
+    </div>-->

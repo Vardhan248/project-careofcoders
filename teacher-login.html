@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Teacher Login</title>
+
+    <link rel="stylesheet" href="teacher-login-style.css">
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="title"><span>Teacher Login Form</span></div>
+            <form action="#" id="teacher_log_in_form">
+                <div class="row">
+                    <i class="fas fa-user"></i>
+                    <input type="email" placeholder="Email" id="teach_id" required>
+                </div>
+                <div class="row">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="teach_password" required>
+                </div>
+                <div class="row btn">
+                    <input type="submit" value="Login" id="submit_button">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("teacher_log_in_form").addEventListener("submit",(event)=>{
+            event.preventDefault()
+        })
+    </script>
+
+
+</body>
+<script type="module" src="teacher_logIn.js"></script>
+</html>

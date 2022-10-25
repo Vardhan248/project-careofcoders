@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Python course Inner 9</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>PYTHON</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+
+<h3>Working with data base</h3>
+<p>
+
+    The Python programming language has powerful features for database programming. Python supports various databases like SQLite, MySQL, Oracle, Sybase, PostgreSQL, etc. Python also supports Data Definition Language (DDL), Data Manipulation Language (DML) and Data Query Statements. The Python standard for database interfaces is the Python DB-API. Most Python database interfaces adhere to this standard. <br><br>
+    Here is the list of available Python database interfaces: Python Database Interfaces and APIs. You must download a separate DB API module for each database you need to access.<br><br>
+    In this chapter we will see the use of SQLite database in python programming language. It is done by using python’s inbuilt, sqlite3 module. You should first create a connection object that represents the database and then create some cursor objects to execute SQL statements.<br><br>
+    Connect To Database<br><br>
+    Following Python code shows how to connect to an existing database. If the database does not exist, then it will be created and finally a database object will be returned.<br><br>
+    #!/usr/bin/python
+    <br><br>
+    import sqlite3
+    <br><br>
+    conn = sqlite3.connect('test.db')
+    <br><br>
+    print"Opened database successfully";<br><br><br>
+    Here, you can also supply database name as the special name :memory: to create a database in RAM. Now, let's run the above program to create our database test.db in the current directory. You can change your path as per your requirement. Keep the above code in sqlite.py file and execute it as shown below. If the database is successfully created, then it will display the following message.<br><br>
+    $chmod +x sqlite.py<br>
+    $./sqlite.py<br>
+    Open database successfully<br><br>
+    Create a Table<br><br>
+    Following Python program will be used to create a table in the previously created database.<br>
+    #!/usr/bin/python
+    <br><br>
+    import sqlite3
+    <br><br>
+    conn = sqlite3.connect('test.db')<br>
+    print"Opened database successfully";<br><br>
+    
+    conn.execute('''CREATE TABLE COMPANY<br>
+             (ID INT PRIMARY KEY     NOT NULL,<br>
+             NAME           TEXT    NOT NULL,<br>
+             AGE            INT     NOT NULL,<br>
+             ADDRESS        CHAR(50),<br>
+             SALARY         REAL);''')<br>
+    print"Table created successfully";<br> <br>
+    
+    conn.close()
+    When the above program is executed, it will create the COMPANY table in your test.db and it will display the following messages −<br><br>
+    Opened database successfully<br>
+    Table created successfully<br><br>
+    Insert Operation<br><br>
+    Following Python program shows how to create records in the COMPANY table created in the above example. <br>
+    #!/usr/bin/python
+    <br><br>
+    import sqlite3
+    
+    conn = sqlite3.connect('test.db')<br>
+    print"Opened database successfully";<br><br>
+    
+    conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \<br>
+          VALUES (1, 'Paul', 32, 'California', 20000.00 )");
+          <br><br>
+    conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \<br>
+          VALUES (2, 'Allen', 25, 'Texas', 15000.00 )");
+          <br><br>
+    conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \<br>
+          VALUES (3, 'Teddy', 23, 'Norway', 20000.00 )");
+          <br><br>
+    conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \<br>
+          VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 )");
+          <br><br>
+    conn.commit()<br>
+    print"Records created successfully";<br>
+    conn.close()<br><br>
+    When the above program is executed, it will create the given records in the COMPANY table and it will display the following two lines −<br><br>
+    Opened database successfully<br>
+    Records created successfully
+    <br><br>
+    Select Operation<br>
+    Following Python program shows how to fetch and display records from the COMPANY table created in the above example.<br><br>
+    #!/usr/bin/python<br><br>
+    
+    import sqlite3<br><br>
+    
+    conn = sqlite3.connect('test.db')<br>
+    print"Opened database successfully";<br><br>
+    
+    cursor =conn.execute("SELECT id, name, address, salary from COMPANY")<br>
+    for row in cursor:<br>
+    print"ID = ",row[0]<br>
+    print"NAME = ",row[1]<br>
+    print"ADDRESS = ",row[2]<br>
+    print"SALARY = ",row[3],"\n"<br><br>
+    
+    print"Operation done successfully";<br>
+    conn.close()<br><br>
+    When the above program is executed, it will produce the following result.<br><br>
+    Opened database successfully<br>
+    ID = 1<br>
+    NAME = Paul<br>
+    ADDRESS = California<br>
+    SALARY = 20000.0<br><br>
+    
+    ID = 2<br>
+    NAME = Allen <br>
+    ADDRESS = Texas<br>
+    SALARY = 15000.0<br><br>
+    
+    ID = 3<br>
+    NAME = Teddy<br>
+    ADDRESS = Norway<br>
+    SALARY = 20000.0<br><br>
+    
+    ID = 4<br>
+    NAME = Mark<br>
+    ADDRESS = Rich-Mond<br>
+    SALARY = 65000.0<br><br>
+    
+    Operation done successfully<br><br>
+    Update Operation<br>
+    Following Python code shows how to use UPDATE statement to update any record and then fetch and display the updated records from the COMPANY table.<br>
+    #!/usr/bin/python<br><br>
+    
+    import sqlite3<br><br>
+    
+    conn = sqlite3.connect('test.db')<br>
+    print"Opened database successfully";<br><br>
+    
+    conn.execute("UPDATE COMPANY set SALARY = 25000.00 where ID = 1")<br>
+    conn.commit<br>
+    print"Total number of rows updated :",conn.total_changes<br><br>
+    
+    cursor =conn.execute("SELECT id, name, address, salary from COMPANY")<br>
+    for row in cursor:<br>
+    print"ID = ",row[0]<br>
+    print"NAME = ",row[1]<br>
+    print"ADDRESS = ",row[2]<br>
+    print"SALARY = ",row[3],"\n"<br><br>
+    
+    print"Operation done successfully";<br>
+    conn.close()<br>
+    When the above program is executed, it will produce the following result.<br>
+    Opened database successfully<br><br>
+    Total number of rows updated : 1<br>
+    ID = 1<br>
+    NAME = Paul<br>
+    ADDRESS = California<br>
+    SALARY = 25000.0<br><br>
+    
+    ID = 2<br>
+    NAME = Allen<br>
+    ADDRESS = Texas<br>
+    SALARY = 15000.0<br><br>
+    
+    ID = 3<br>
+    NAME = Teddy<br>
+    ADDRESS = Norway<br>
+    SALARY = 20000.0<br><br>
+    
+    ID = 4<br>
+    NAME = Mark<br>
+    ADDRESS = Rich-Mond<br>
+    SALARY = 65000.0<br><br>
+    
+    Operation done successfully<br><br>
+    Delete Operation<br>
+    Following Python code shows how to use DELETE statement to delete any record and then fetch and display the remaining records from the COMPANY table.<br><br>
+    #!/usr/bin/python<br><br>
+    
+    import sqlite3<br><br>
+    
+    conn = sqlite3.connect('test.db')<br><br>
+    print"Opened database successfully";<br><br>
+    
+    conn.execute("DELETE from COMPANY where ID = 2;")<br>
+    conn.commit()<br>
+    print"Total number of rows deleted :",conn.total_changes<br><br>
+    
+    cursor =conn.execute("SELECT id, name, address, salary from COMPANY")<br>
+    for row in cursor:<br>
+    print"ID = ",row[0]<br>
+    print"NAME = ",row[1]<br>
+    print"ADDRESS = ",row[2]<br>
+    print"SALARY = ",row[3],"\n"<br><br>
+    
+    print"Operation done successfully";<br>
+    conn.close()<br><br>
+    When the above program is executed, it will produce the following result.<br>
+    Opened database successfully<br>
+    Total number of rows deleted : 1<br><br>
+    ID = 1<br>
+    NAME = Paul<br>
+    ADDRESS = California<br>
+    SALARY = 20000.0<br><br>
+    
+    ID = 3<br>
+    NAME = Teddy<br>
+    ADDRESS = Norway<br>
+    SALARY = 20000.0<br><br>
+    
+    ID = 4<br>
+    NAME = Mark<br>
+    ADDRESS = Rich-Mond<br>
+    SALARY = 65000.0<br><br>
+    
+    Operation done successfully<br><br>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/g60QghtJmjY" title="Python Database Connection | How to Connect Python with MySQL Database | Edureka" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<hr>
+</div>
+
+
+<div class="congo">
+    <center>
+    <div class="congo-text">
+        <p>Congratulations! You have successfully completed your <span>Python course</span>. Please download the certificate  </p>
+    </div>
+
+    <canvas hidden id="canvas" height="707px" width="1000px"></canvas>
+
+    <div class="congo-btn">
+        <a href="" id="congo-btn" class="main-btn">Download</a>
+    </div>
+</center>
+</div>
+
+<hr>
+
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="python-course-inner8.html" class="previous">&laquo; previous</a>
+        </div>
+        <!--
+                    <div class="next last-next"> 
+            <a href="" class="next ">Next &raquo;</a>
+        </div>
+        -->
+        <div class="next last-next"> 
+            <a href="" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+    <script type="module" src="python-certi.js"></script>
+    
+</body>
+</html>
+
+<!--<div class="features">
+        <h3>Features of this course :</h3>
+        <p><i class="far fa-video"></i> Video links for each topic</p>
+        <p><i class="far fa-cloud-download"></i> downloadable articles</p>
+        <p><i class="far fa-mobile-alt"></i> Can be viewed on  phone</p>
+        <p><i class="far fa-paperclip"></i> Quizz questions</p>
+        <p><i class="fas fa-certificate"></i> Will be certified </p>
+    </div>-->
+
+    <!----  
+    <hr>
+
+<div class="congo">
+    <center>
+    <div class="congo-text">
+        <p>Congratulations! You have successfully completed your <span>Python course</span>. Please download the certificate  </p>
+    </div>
+
+    <canvas id="canvas" height="707px" width="1000px"></canvas>
+
+    <div class="congo-btn">
+        <a href="" id="congo-btn" class="main-btn">Download</a>
+    </div>
+</center>
+</div>
+
+<hr>
+
+    <script type="module" src="python-certi.js"></script>
+    -->

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>Python Quizzes</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="./quizzes_inner_css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!--quiz section-->
+<div class="quiz_wrapper">
+<div class="quiz-container" id="quiz">
+    <div class="title">C/O CODERS QUIZZES</div> 
+ <hr>
+    <div class="quiz-header" id="quiz_header_1">
+      <div class="quest">
+      <h2 id="question">Question Text</h2>
+    </div>
+    
+    <div class="options_list">
+      <ul>
+        <div class="option">
+        <li>
+          <input type="radio" style="accent-color:#000;" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+      </div>
+      <div class="option">
+        <li>
+          <input type="radio" style="accent-color:#000;" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+      </div>
+      <div class="option">
+        <li>
+          <input type="radio" style="accent-color:#000;" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+      </div>
+      <div class="option">
+        <li>
+          <input type="radio" style="accent-color:#000 ;" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+      </div>
+      </ul>
+    </div>
+    </div>
+    <center>
+    <button id="submit">Submit</button>
+  </center>
+  </div>
+</div>
+
+  <script src="main.js"></script>
+  <script type="module" src="pythonscript.js"></script>
+
+<!--  <script type="module" src="Quizzes-questions.js"></script>
+  <script type="module" src="pythonquestions.js"></script>
+  <script type="module" src="csharpquestions.js"></script>-->
+<!--<script  src="javaquestions_.js"></script> -->
+</section>
+</body>
+</html>

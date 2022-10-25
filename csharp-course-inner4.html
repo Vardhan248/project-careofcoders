@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/O CODERS</title>
+    <title>c sharp course Inner 1</title>
+    
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+    <link rel="stylesheet" href="courses_css.css">
+    <link rel="stylesheet" href="actual-course-css.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/new_logo.png" class="img-fluid" alt="logo">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quizzes.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Compilers.html" >Compilers</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn main-btn-active" href="courses.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="" class="courses_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle"> < LET'S CRACK IT ></span>
+                    <h2>C SHARP</h2>
+                </div>
+            </div>
+
+<div class="actual-content">
+    <h3>Arrays</h3>
+    <p>
+        An array stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type stored at contiguous memory locations.<br>
+        Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables. A specific element in an array is accessed by an index.<br>
+        All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.<br><br>
+        Declaring Arrays<br>
+        To declare an array in C#, you can use the following syntax −<br>
+        datatype[] arrayName;<br>
+        where,<br>
+        •	datatype is used to specify the type of elements in the array.<br>
+        •	[ ] specifies the rank of the array. The rank specifies the size of the array.<br>
+        •	arrayName specifies the name of the array.<br><br>
+        Initializing an Array<br>
+        Declaring an array does not initialize the array in the memory. When the array variable is initialized, you can assign values to the array.<br>
+        Array is a reference type, so you need to use the new keyword to create an instance of the array.<br><br>
+        Accessing Array Elements<br>
+        An element is accessed by indexing the array name. This is done by placing the index of the element within square brackets after the name of the array.<br><br>
+        Using the foreach Loop<br>
+        You can also use a foreach statement to iterate through an array.<br><br>
+        C# Arrays<br>
+        There are following few important concepts related to array which should be clear to a C# programmer −<br><br>
+        Multi-dimensional arrays<br>
+        C# supports multidimensional arrays. The simplest form of the multidimensional array is the two-dimensional array.<br><br>
+        Jagged arrays<br>
+        C# supports multidimensional arrays, which are arrays of arrays.<br><br>
+        Passing arrays to functions<br>
+        You can pass to the function a pointer to an array by specifying the array's name without an index.<br><br>
+        Param arrays<br>
+        This is used for passing unknown number of parameters to a function.<br><br>
+        The Array Class<br>
+        Defined in System namespace, it is the base class to all arrays, and provides various properties and methods for working with arrays.<br><br>
+        ArrayList<br>
+        It represents an ordered collection of an object that can be indexed individually. It is basically an alternative to an array. However, unlike array you can add and remove items from a list at a specified position using an index and the array resizes itself automatically. It also allows dynamic memory allocation, adding, searching and sorting items in the list.<br><br>
+        Methods and Properties of ArrayList Class<br>
+        Capacity<br>
+        Gets or sets the number of elements that the ArrayList can contain.<br><br>
+        Count<br>
+        Gets the number of elements actually contained in the ArrayList.<br><br>
+        IsFixedSize<br>
+        Gets a value indicating whether the ArrayList has a fixed size.<br><br>
+        IsReadOnly<br>
+        Gets a value indicating whether the ArrayList is read-only.<br><br>
+        Item<br>
+        Gets or sets the element at the specified index.<br><br>
+        The following table lists some of the commonly used methods of the ArrayList class –<br>
+        
+        public virtual int Add(object value);<br>
+        Adds an object to the end of the ArrayList.<br>
+        public virtual void AddRange(ICollection c);<br>
+        Adds the elements of an ICollection to the end of the ArrayList.<br>
+        public virtual void Clear();<br>
+        Removes all elements from the ArrayList.<br>
+        public virtual bool Contains(object item);<br>
+        Determines whether an element is in the ArrayList.<br>
+        public virtual ArrayList GetRange(int index, int count);<br>
+        Returns an ArrayList which represents a subset of the elements in the source ArrayList.<br>
+        
+        public virtual int IndexOf(object);<br>
+        Returns the zero-based index of the first occurrence of a value in the ArrayList or in a portion of it.<br>
+        public virtual void Insert(int index, object value);<br>
+        Inserts an element into the ArrayList at the specified index.<br>
+        public virtual void InsertRange(int index, ICollection c);<br>
+        Inserts the elements of a collection into the ArrayList at the specified index.<br>
+        public virtual void Remove(object obj);<br>
+        Removes the first occurrence of a specific object from the ArrayList.<br>
+        public virtual void RemoveAt(int index);<br>
+        Removes the element at the specified index of the ArrayList<br>
+        public virtual void RemoveRange(int index, int count);<br>
+        Removes a range of elements from the ArrayList.<br>
+        public virtual void Reverse();<br>
+        Reverses the order of the elements in the ArrayList.<br>
+        public virtual void SetRange(int index, ICollection c);<br>
+        Copies the elements of a collection over a range of elements in the ArrayList.<br>
+        public virtual void Sort();<br>
+        Sorts the elements in the ArrayList.<br>
+        public virtual void TrimToSize();<br>
+        Sets the capacity to the actual number of elements in the ArrayList.
+        
+       <br><br>
+       <iframe width="942" height="530" src="https://www.youtube.com/embed/alp6vy3jIXw" title="#11 C# Arrays in Telugu | C# Tutorial for beginners in Telugu| Arrays C# in Telugu| Arrays C# Telugu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <hr>
+    <h3>String</h3>
+    <p>
+        C# Strings<br>
+In C#, string is an object of System.String class that represent sequence of characters. We can perform many operations on strings such as concatenation, comparision, getting substring, search, trim, replacement etc.<br><br>
+string vs String<br>
+In C#, string is keyword which is an alias for System.String class. That is why string and String are equivalent. We are free to use any naming convention.<br><br>
+C# String methods<br>
+Clone()-It is used to return a reference to this instance of String.<br>
+Compare(String, String)- It is used to compares two specified String objects. It returns an integer that indicates their relative position in the sort order.<br>
+CompareOrdinal(String, String)- It is used to compare two specified String objects by evaluating the numeric values of the corresponding Char objects in each string..<br>
+CompareTo(String)- It is used to compare this instance with a specified String object. It indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified string.<br>
+Concat(String, String)- It is used to concatenate two specified instances of String.<br>
+Contains(String)- It is used to return a value indicating whether a specified substring occurs within this string.<br>
+Copy(String)- It is used to create a new instance of String with the same value as a specified String.<br>
+CopyTo(Int32, Char[], Int32, Int32)- It is used to copy a specified number of characters from a specified position in this instance to a specified position in an array of Unicode characters.<br>
+EndsWith(String)- It is used to check that the end of this string instance matches the specified string.<br>
+Equals(String, String)- It is used to determine that two specified String objects have the same value.<br>
+Format(String, Object)- It is used to replace one or more format items in a specified string with the string representation of a specified object.<br>
+GetEnumerator()-It is used to retrieve an object that can iterate through the individual characters in this string.<br>
+GetHashCode()-It returns the hash code for this string.<br>
+GetType()-It is used to get the Type of the current instance.<br>
+GetTypeCode()-It is used to return the TypeCode for class String.<br>
+IndexOf(String)- It is used to report the zero-based index of the first occurrence of the specified string in this instance.<br>
+Insert(Int32, String)- It is used to return a new string in which a specified string is inserted at a specified index position.<br>
+Intern(String)- It is used to retrieve the system's reference to the specified String.<br>
+IsInterned(String)- It is used to retrieve a reference to a specified String.<br>
+IsNormalized()-It is used to indicate that this string is in Unicode normalization form C.<br>
+IsNullOrEmpty(String)- It is used to indicate that the specified string is null or an Empty string.<br>
+IsNullOrWhiteSpace(String)- It is used to indicate whether a specified string is null, empty, or consists only of white-space characters.<br>
+Join(String, String[])-It is used to concatenate all the elements of a string array, using the specified separator between each element.<br>
+LastIndexOf(Char)- It is used to report the zero-based index position of the last occurrence of a specified character within String.<br>
+LastIndexOfAny(Char[])-It is used to report the zero-based index position of the last occurrence in this instance of one or more characters specified in a Unicode array.<br>
+Normalize()-It is used to return a new string whose textual value is the same as this string, but whose binary representation is in Unicode normalization form C.<br>
+PadLeft(Int32)- It is used to return a new string that right-aligns the characters in this instance by padding them with spaces on the left.<br>
+PadRight(Int32)- It is used to return a new string that left-aligns the characters in this string by padding them with spaces on the right.<br>
+Remove(Int32)- It is used to return a new string in which all the characters in the current instance, beginning at a specified position and continuing through the last position, have been deleted.<br>
+Replace(String, String)- It is used to return a new string in which all occurrences of a specified string in the current instance are replaced with another specified string.<br>
+Split(Char[])-It is used to split a string into substrings that are based on the characters in an array.<br>
+StartsWith(String)- It is used to check whether the beginning of this string instance matches the specified string.<br>
+Substring(Int32)- It is used to retrieve a substring from this instance. The substring starts at a specified character position and continues to the end of the string.<br>
+ToCharArray()-It is used to copy the characters in this instance to a Unicode character array.<br>
+ToLower()-It is used to convert String into lowercase.<br>
+ToLowerInvariant()-It is used to return convert String into lowercase using the casing rules of the invariant culture.<br>
+ToString()-It is used to return instance of String. It is used to convert String into uppercase.<br>
+ToUpper()-It is used to convert String into uppercase.<br>
+Trim()-It is used to remove all leading and trailing white-space characters from the current String object.<br>
+TrimEnd(Char[])-It Is used to remove all trailing occurrences of a set of characters specified in an array from the current String object.<br>
+TrimStart(Char[])-It is used to remove all leading occurrences of a set of characters specified in an array from the current String object.
+
+
+
+        <br>
+<br>
+<iframe width="942" height="530" src="https://www.youtube.com/embed/cTY2x8tfYN4" title="C# Strings | Strings in C# Programming Language - C# Tutorial 16" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+   <hr>
+    
+</div>
+
+    <div class="pagination-div">
+        <div class="previous">
+            <a href="csharp-course-inner3.html" class="previous">&laquo; previous</a>
+        </div>
+        <div class="next">
+            <a href="csharp-course-inner5.html" class="next ">Next &raquo;</a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!--Footer-->
+<footer id="footer">
+    <div class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Quizzes.html" class="footer-link">Quizzes</a>
+                    <a href="teacher_page.html" class="footer-link">Teacher</a>
+                    <a href="courses.html" class="footer-link">Courses</a>
+                    <a href="#" class="footer-link" id="signOut_">Log out</a>
+
+                    <div class="footer-social pt-3 text-center">
+                       <a href="https://www.facebook.com/people/Careof-Coders/100086784171084/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/careofcoders"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/careof-coders-7355a8254/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/careofcoders/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="text-center pt-5">
+                        <p class="text-light">© 2022. C/O Coders. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------OWN JS------------------------------->
+
+<script type="module" src="./firebase/F-firebase.js"></script>
+    <!--OWN JS-->
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!--<div class="features">
+        <h3>Features of this course :</h3>
+        <p><i class="far fa-video"></i> Video links for each topic</p>
+        <p><i class="far fa-cloud-download"></i> downloadable articles</p>
+        <p><i class="far fa-mobile-alt"></i> Can be viewed on  phone</p>
+        <p><i class="far fa-paperclip"></i> Quizz questions</p>
+        <p><i class="fas fa-certificate"></i> Will be certified </p>
+    </div>-->
